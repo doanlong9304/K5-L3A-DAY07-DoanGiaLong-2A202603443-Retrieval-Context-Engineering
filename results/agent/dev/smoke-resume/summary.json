@@ -1,0 +1,46 @@
+{
+  "run": "smoke-resume",
+  "split": "dev",
+  "run_at": "2026-11-14T16:42:49+07:00",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "max_searches": 3,
+    "top_k": 3,
+    "budget": 3000,
+    "temperature": 0.0,
+    "max_turns": 6,
+    "retriever": "dense",
+    "context_budget_unit": "characters",
+    "filter": "user-provided chapter filter from cases.json when present"
+  },
+  "cases": 2,
+  "status": {
+    "answered": 1,
+    "abstain": 1
+  },
+  "stop_reasons": {
+    "answer": 1,
+    "model_abstain": 1
+  },
+  "tool_use": {
+    "cases_with_search": 2,
+    "N": 2,
+    "searches_per_case": {
+      "1": 1,
+      "3": 1
+    }
+  },
+  "tokens": {
+    "input_tokens": 6135,
+    "output_tokens": 260,
+    "thinking_tokens": 0
+  },
+  "llm_calls": 6,
+  "embedding_api_calls": 0,
+  "seconds": {
+    "median_per_case": 13.91,
+    "total": 27.8
+  },
+  "errors": [],
+  "complete": true
+}

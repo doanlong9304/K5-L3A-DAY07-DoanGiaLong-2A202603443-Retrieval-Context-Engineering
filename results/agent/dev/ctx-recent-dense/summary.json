@@ -1,0 +1,53 @@
+{
+  "run": "ctx-recent-dense",
+  "split": "dev",
+  "run_at": "2026-11-14T17:20:16+07:00",
+  "config": {
+    "model": "claude-opus-5-5",
+    "max_searches": 3,
+    "top_k": 3,
+    "budget": 3000,
+    "temperature": 0.0,
+    "max_turns": 6,
+    "context_policy": "recent",
+    "retriever": "dense",
+    "context_budget_unit": "characters",
+    "filter": "user-provided chapter filter from cases.json when present"
+  },
+  "cases": 19,
+  "status": {
+    "answered": 16,
+    "abstain": 3
+  },
+  "stop_reasons": {
+    "answer": 16,
+    "model_abstain": 3
+  },
+  "tool_use": {
+    "cases_with_search": 19,
+    "N": 19,
+    "searches_per_case": {
+      "1": 13,
+      "2": 1,
+      "3": 5
+    }
+  },
+  "tokens": {
+    "input_tokens": 115271,
+    "output_tokens": 16250,
+    "thinking_tokens": 0
+  },
+  "llm_calls": 49,
+  "llm_cost_usd": 0.7861,
+  "price_note": "list price USD per 1M tokens (input, output) as of 2026-11; free tier would be 0",
+  "served_models": [
+    "claude-opus-5-5"
+  ],
+  "embedding_api_calls": 10,
+  "seconds": {
+    "median_per_case": 9.39,
+    "total": 196.7
+  },
+  "errors": [],
+  "complete": true
+}

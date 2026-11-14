@@ -1,0 +1,593 @@
+[
+  {
+    "query_id": "t01",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Những ngành, nghề nào bị cấm đầu tư?",
+    "filter": {
+      "chapter": "V"
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-4679425b231441ae",
+        "score": 0.7727,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 40,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B-30b81c76d49df66f",
+        "score": 0.7265,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 41,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B-f79f725070650181",
+        "score": 0.6394,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 43,
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "B-67bca7e9097c9c87",
+        "score": 0.6356,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "B-1887fa9bc4904616",
+        "score": 0.6353,
+        "page": 29,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 39,
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "B-e3ea25c94810b7be",
+        "score": 0.634,
+        "page": 30,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "B-4941169e3efd28f4",
+        "score": 0.6241,
+        "page": 29,
+        "page_end": 29,
+        "chapter": "V",
+        "article": 38,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-4679425b231441ae",
+      "B-30b81c76d49df66f",
+      "B-f79f725070650181"
+    ],
+    "context_chars": 1422,
+    "context_hit": true,
+    "latency_ms": 546.5,
+    "gold_pages": [
+      30
+    ]
+  },
+  {
+    "query_id": "t02",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "Một công ty được thành lập theo pháp luật nước ngoài, kinh doanh tại Việt Nam thì được coi là loại nhà đầu tư nào?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-0a9a8be259cae4c2",
+        "score": 0.7459,
+        "page": 2,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 3,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B-d809ebe15fe79a20",
+        "score": 0.7061,
+        "page": 14,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 19,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.7021,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "B-94dea8a9e1d73efe",
+        "score": 0.7012,
+        "page": 7,
+        "page_end": 7,
+        "chapter": "I",
+        "article": 8,
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "B-19128a8b6b25c365",
+        "score": 0.6936,
+        "page": 29,
+        "page_end": 29,
+        "chapter": "IV",
+        "article": 37,
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "B-1887fa9bc4904616",
+        "score": 0.6912,
+        "page": 29,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 39,
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "B-ee1e89ea371943d8",
+        "score": 0.6897,
+        "page": 20,
+        "page_end": 21,
+        "chapter": "IV",
+        "article": 26,
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "B-2206fc7e96147f6d",
+        "score": 0.6883,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "B-2ec8df55f0e7dd50",
+        "score": 0.6852,
+        "page": 7,
+        "page_end": 7,
+        "chapter": "I",
+        "article": 8,
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "B-9d3aae12a3a9516f",
+        "score": 0.6844,
+        "page": 1,
+        "page_end": 1,
+        "chapter": "I",
+        "article": 1,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-0a9a8be259cae4c2",
+      "B-d809ebe15fe79a20",
+      "B-5c7f4add003ca5ff"
+    ],
+    "context_chars": 2844,
+    "context_hit": true,
+    "latency_ms": 419.9,
+    "gold_pages": [
+      3
+    ]
+  },
+  {
+    "query_id": "t03",
+    "split": "test",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Sau bao lâu kể từ khi kết thúc tiến độ thực hiện mục tiêu hoạt động thì cơ quan đăng ký đầu tư có thể chấm dứt dự án?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-2b7d8deec90172dc",
+        "score": 0.8004,
+        "page": 27,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B-f15035f21c9fb383",
+        "score": 0.7419,
+        "page": 28,
+        "page_end": 29,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B-d4340505f6e7f329",
+        "score": 0.741,
+        "page": 28,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "B-e7304ebd3af27c91",
+        "score": 0.7322,
+        "page": 24,
+        "page_end": 24,
+        "chapter": "IV",
+        "article": 31,
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "B-ec40f8d841582794",
+        "score": 0.7214,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "B-77ed886349b73469",
+        "score": 0.7144,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "B-fced6d927e32f5bf",
+        "score": 0.709,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "B-1713e4a67c61718a",
+        "score": 0.7001,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "B-0288b0e0f7ba0af3",
+        "score": 0.6902,
+        "page": 23,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 31,
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "B-74be6ac4f631b6d2",
+        "score": 0.6892,
+        "page": 25,
+        "page_end": 25,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-2b7d8deec90172dc",
+      "B-f15035f21c9fb383"
+    ],
+    "context_chars": 2170,
+    "context_hit": true,
+    "latency_ms": 380.8,
+    "gold_pages": [
+      28
+    ]
+  },
+  {
+    "query_id": "t04",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "Nhà đầu tư có dự án ở nước ngoài phải gửi báo cáo tình hình hoạt động bao lâu một lần và gửi cho ai?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-71dfbbff0a0b5b66",
+        "score": 0.8055,
+        "page": 36,
+        "page_end": 37,
+        "chapter": "VI",
+        "article": 48,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B-d5ba860915fd82bb",
+        "score": 0.7903,
+        "page": 37,
+        "page_end": 37,
+        "chapter": "VI",
+        "article": 48,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B-5073689a2834db3c",
+        "score": 0.7846,
+        "page": 36,
+        "page_end": 36,
+        "chapter": "VI",
+        "article": 48,
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "B-bf844a7bcda3ab3f",
+        "score": 0.7481,
+        "page": 37,
+        "page_end": 37,
+        "chapter": "VI",
+        "article": 48,
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "B-7306e07ac26c8240",
+        "score": 0.7414,
+        "page": 35,
+        "page_end": 36,
+        "chapter": "VI",
+        "article": 47,
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "B-44a8717c44206c5d",
+        "score": 0.738,
+        "page": 36,
+        "page_end": 36,
+        "chapter": "VI",
+        "article": 47,
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "B-f79f725070650181",
+        "score": 0.6838,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 43,
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "B-749c448638f72173",
+        "score": 0.667,
+        "page": 33,
+        "page_end": 33,
+        "chapter": "VI",
+        "article": 44,
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "B-e3ea25c94810b7be",
+        "score": 0.6604,
+        "page": 30,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "B-1383436087665cca",
+        "score": 0.656,
+        "page": 42,
+        "page_end": 42,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-71dfbbff0a0b5b66",
+      "B-d5ba860915fd82bb",
+      "B-5073689a2834db3c"
+    ],
+    "context_chars": 2747,
+    "context_hit": true,
+    "latency_ms": 382.1,
+    "gold_pages": [
+      37
+    ]
+  },
+  {
+    "query_id": "t05",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Luật Đầu tư số 143/2025/QH15 có hiệu lực thi hành từ ngày nào?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-fbf3fa0919e2dd84",
+        "score": 0.7445,
+        "page": 39,
+        "page_end": 39,
+        "chapter": "VII",
+        "article": 51,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B-6c1ef41314ce6339",
+        "score": 0.7105,
+        "page": 1,
+        "page_end": 1,
+        "chapter": null,
+        "article": null,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B-0b85056d7951b96e",
+        "score": 0.6773,
+        "page": 39,
+        "page_end": 39,
+        "chapter": "VII",
+        "article": 51,
+        "hit": false
+      },
+      {
+        "rank": 4,
+        "id": "B-4d770a6b103678b9",
+        "score": 0.6721,
+        "page": 39,
+        "page_end": 40,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false
+      },
+      {
+        "rank": 5,
+        "id": "B-f59bc62731b3125a",
+        "score": 0.6715,
+        "page": 1,
+        "page_end": 1,
+        "chapter": "I",
+        "article": 2,
+        "hit": false
+      },
+      {
+        "rank": 6,
+        "id": "B-bcb92269d8fe7a57",
+        "score": 0.6702,
+        "page": 43,
+        "page_end": 43,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false
+      },
+      {
+        "rank": 7,
+        "id": "B-7b895db1dad63922",
+        "score": 0.6687,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false
+      },
+      {
+        "rank": 8,
+        "id": "B-daa0542b6c8d0a3b",
+        "score": 0.6627,
+        "page": 40,
+        "page_end": 40,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false
+      },
+      {
+        "rank": 9,
+        "id": "B-9d3aae12a3a9516f",
+        "score": 0.6592,
+        "page": 1,
+        "page_end": 1,
+        "chapter": "I",
+        "article": 1,
+        "hit": false
+      },
+      {
+        "rank": 10,
+        "id": "B-4ddef9eacdad86fc",
+        "score": 0.6565,
+        "page": 4,
+        "page_end": 4,
+        "chapter": "I",
+        "article": 4,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-fbf3fa0919e2dd84",
+      "B-6c1ef41314ce6339",
+      "B-0b85056d7951b96e"
+    ],
+    "context_chars": 2359,
+    "context_hit": true,
+    "latency_ms": 387.5,
+    "gold_pages": [
+      39
+    ]
+  }
+]

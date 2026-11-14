@@ -1,0 +1,56 @@
+[
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "Lệ phí cấp Giấy chứng nhận đăng ký đầu tư là bao nhiêu tiền?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Luật có định nghĩa và thủ tục về Giấy chứng nhận đăng ký đầu tư (Điều 3 khoản 11 và nhiều điều khác) nhưng không quy định lệ phí hay mức thu nào cho việc cấp giấy này.",
+    "absence_check": "Tìm toàn văn 43 trang (đã chuẩn hóa khoảng trắng): 'lệ phí' 0 kết quả; 'phí ' chỉ có 'chi phí tuân thủ' (tr.6), 'chi phí được trừ' (tr.11), 'chi phí giám định' (tr.24); không có số tiền nào gắn với Giấy chứng nhận đăng ký đầu tư."
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "Nhà đầu tư chậm tiến độ thực hiện dự án đầu tư bị phạt tiền tối đa bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Luật chỉ nhắc việc nhà đầu tư 'đã bị xử phạt vi phạm hành chính' như một điều kiện chấm dứt dự án (tr.27) và giao xử lý vi phạm cho quy định khác; không có mức phạt tiền.",
+    "absence_check": "'phạt tiền' 0 kết quả; 'xử phạt' 1 kết quả (tr.27, điều kiện chấm dứt hoạt động dự án, không có số tiền); 'vi phạm hành chính' 2 kết quả (tr.22, tr.27), đều không nêu mức phạt."
+  },
+  {
+    "id": "u03",
+    "split": "dev",
+    "question": "Dự án đầu tư trong khu kinh tế được áp dụng thuế suất thuế thu nhập doanh nghiệp ưu đãi bao nhiêu phần trăm?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Luật chỉ nêu hình thức ưu đãi là 'thuế suất thấp hơn mức thuế suất thông thường' (tr.10) và dẫn chiếu Luật Thuế thu nhập doanh nghiệp (tr.14); không có con số thuế suất.",
+    "absence_check": "'thuế suất' 1 kết quả (tr.10, không có số); 'phần trăm' 0 kết quả; ký tự '%' 3 kết quả, đều không liên quan thuế (tr.15 và tr.16: tỷ lệ 50% vốn điều lệ của nhà đầu tư nước ngoài; tr.25: tăng tổng vốn đầu tư từ 20%)."
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "Cơ quan đăng ký đầu tư phải cấp Giấy chứng nhận đăng ký đầu tư trong bao nhiêu ngày kể từ khi nhận đủ hồ sơ hợp lệ?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Luật không quy định số ngày xử lý hồ sơ cấp Giấy chứng nhận đăng ký đầu tư; thời hạn tính bằng ngày duy nhất trong luật là 60 ngày cho chế độ báo cáo đầu tư ra nước ngoài (tr.36).",
+    "absence_check": "Liệt kê mọi cụm '<số> ngày|tháng|năm' trong toàn văn: 01 năm, 01 tháng, 03 năm, 06 tháng, 12 tháng, 24 tháng, 50 năm, 60 ngày, 7 năm, 70 năm; '60 ngày' là báo cáo đầu tư ra nước ngoài; 'ngày làm việc' 0 kết quả."
+  },
+  {
+    "id": "u05",
+    "split": "test",
+    "question": "Mức ký quỹ bảo đảm thực hiện dự án đầu tư là bao nhiêu phần trăm tổng vốn đầu tư?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Điều 30 (tr.23) quy định nghĩa vụ ký quỹ hoặc bảo lãnh ngân hàng và các trường hợp được miễn, nhưng không quy định mức hay tỷ lệ ký quỹ; khoản 2 giao 'Chính phủ quy định chi tiết Điều này'.",
+    "absence_check": "'mức ký quỹ' 0 kết quả; 'tỷ lệ ký quỹ' 0 kết quả; 'ký quỹ' 3 trang (tr.23, 28, 41), không có tỷ lệ; 3 kết quả '%' không liên quan ký quỹ (xem u03)."
+  },
+  {
+    "id": "u06",
+    "split": "test",
+    "question": "Doanh nghiệp có vốn đầu tư nước ngoài phải trả mức lương tối thiểu bao nhiêu cho người lao động Việt Nam?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Luật Đầu tư không quy định tiền lương; 'lao động' chỉ xuất hiện như tiêu chí dự án hoặc dẫn chiếu pháp luật về lao động (tr.10, 23, 27).",
+    "absence_check": "'lương' 0 kết quả; 'tiền lương' 0 kết quả; 'lao động' 6 kết quả, không có mức tiền nào."
+  }
+]

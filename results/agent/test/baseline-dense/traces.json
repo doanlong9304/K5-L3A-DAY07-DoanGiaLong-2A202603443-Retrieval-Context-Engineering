@@ -1,0 +1,825 @@
+[
+  {
+    "query_id": "t01",
+    "split": "test",
+    "question": "Những ngành, nghề nào bị cấm đầu tư?",
+    "filter": {
+      "chapter": "V"
+    },
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "stop_reason": "model_abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "ngành, nghề cấm đầu tư kinh doanh",
+        "filter": {
+          "chapter": "V"
+        },
+        "results": [
+          {
+            "id": "B-4679425b231441ae",
+            "page": 30,
+            "article": 40,
+            "score": 0.7968
+          },
+          {
+            "id": "B-30b81c76d49df66f",
+            "page": 30,
+            "article": 41,
+            "score": 0.7453
+          },
+          {
+            "id": "B-67bca7e9097c9c87",
+            "page": 31,
+            "article": 42,
+            "score": 0.65
+          }
+        ],
+        "context_ids": [
+          "B-4679425b231441ae",
+          "B-30b81c76d49df66f",
+          "B-67bca7e9097c9c87"
+        ],
+        "context_chars": 2156
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "Điều 6 cấm hoạt động đầu tư kinh doanh chất ma túy",
+        "filter": {
+          "chapter": "V"
+        },
+        "results": [
+          {
+            "id": "B-4679425b231441ae",
+            "page": 30,
+            "article": 40,
+            "score": 0.741
+          },
+          {
+            "id": "B-30b81c76d49df66f",
+            "page": 30,
+            "article": 41,
+            "score": 0.6708
+          },
+          {
+            "id": "B-f79f725070650181",
+            "page": 31,
+            "article": 43,
+            "score": 0.6444
+          }
+        ],
+        "context_ids": [
+          "B-4679425b231441ae",
+          "B-30b81c76d49df66f",
+          "B-67bca7e9097c9c87",
+          "B-f79f725070650181"
+        ],
+        "context_chars": 2487
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "Điều 6 Ngành, nghề cấm đầu tư kinh doanh mại dâm mua bán người",
+        "filter": {
+          "chapter": "V"
+        },
+        "results": [
+          {
+            "id": "B-4679425b231441ae",
+            "page": 30,
+            "article": 40,
+            "score": 0.7566
+          },
+          {
+            "id": "B-30b81c76d49df66f",
+            "page": 30,
+            "article": 41,
+            "score": 0.6985
+          },
+          {
+            "id": "B-f79f725070650181",
+            "page": 31,
+            "article": 43,
+            "score": 0.6216
+          }
+        ],
+        "context_ids": [
+          "B-4679425b231441ae",
+          "B-30b81c76d49df66f",
+          "B-67bca7e9097c9c87",
+          "B-f79f725070650181"
+        ],
+        "context_chars": 2487
+      },
+      {
+        "event": "abstain",
+        "reason": "Tôi chưa trả lời được câu hỏi này vì không tìm được nội dung Điều 6 Luật Đầu tư 143/2025/QH15. Đây là điều quy định danh sách ngành, nghề cấm đầu tư kinh doanh, và tôi đã hết lượt tìm kiếm.\n\nCác đoạn tìm được chỉ có Điều 40 về ngành, nghề cấm đầu tư ra nước ngoài. Điều 40 không liệt kê cụ thể mà dẫn chiếu sang ba nguồn:\n- Ngành, nghề cấm theo Điều 6 và các điều ước quốc tế có liên quan mà Việt Nam là thành viên.\n- Ngành, nghề có công nghệ, sản phẩm bị cấm xuất khẩu theo pháp luật về quản lý ngoại thương.\n- Ngành, nghề bị cấm theo pháp luật của nước tiếp nhận đầu tư.\n\n[B-4679425b231441ae]\n\nBạn nên tra cứu trực tiếp Điều 6 trong văn bản Luật để có danh sách đầy đủ."
+      }
+    ],
+    "queries": [
+      "ngành, nghề cấm đầu tư kinh doanh",
+      "Điều 6 cấm hoạt động đầu tư kinh doanh chất ma túy",
+      "Điều 6 Ngành, nghề cấm đầu tư kinh doanh mại dâm mua bán người"
+    ],
+    "final_context": "[B-4679425b231441ae] (nguồn: data/raw/luat143-2025.pdf | trang 30 | Điều 40)\nĐiều 40. Ngành, nghề cấm đầu tư ra nước ngoài\n1. Ngành, nghề cấm đầu tư kinh doanh quy định tại Điều 6 của Luật này và\ncác điều ước quốc tế có liên quan mà nước Cộng hòa xã hội chủ nghĩa Việt Nam\nlà thành viên.\n2. Ngành, nghề có công nghệ, sản phẩm thuộc đối tượng cấm xuất khẩu theo\nquy định của pháp luật về quản lý ngoại thương.\n3. Ngành, nghề cấm đầu tư kinh doanh theo quy định của pháp luật nước\ntiếp nhận đầu tư.\n\n[B-30b81c76d49df66f] (nguồn: data/raw/luat143-2025.pdf | trang 30 | Điều 41)\nĐiều 41. Ngành, nghề đầu tư ra nước ngoài có điều kiện\n1. Ngành, nghề đầu tư ra nước ngoài có điều kiện bao gồm:\na) Ngân hàng;\nb) Bảo hiểm;\nc) Chứng khoán;\nd) Báo chí, phát thanh, truyền hình;\nđ) Kinh doanh bất động sản.\n2. Điều kiện đầu tư ra nước ngoài trong ngành, nghề quy định tại khoản 1\nĐiều này được quy định tại luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết\ncủa Ủy ban Thường vụ Quốc hội, nghị định của Chính phủ và điều ước quốc tế về\nđầu tư mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.\n\n[B-67bca7e9097c9c87] (nguồn: data/raw/luat143-2025.pdf | trang 31 | Điều 42)\nĐiều 42. Cấp, điều chỉnh, chấm dứt hiệu lực của Giấy chứng nhận đăng (tiếp)\n3. Nhà đầu tư thực hiện thủ tục đăng ký giao dịch ngoại hối theo quy định\ncủa pháp luật về quản lý ngoại hối mà không phải thực hiện thủ tục cấp Giấy chứng\nnhận đăng ký đầu tư ra nước ngoài trong các trường hợp sau đây:\na) Dự án đầu tư ra nước ngoài có mức vốn đầu tư ra nước ngoài nhỏ hơn\nmức quy định của Chính phủ và không thuộc ngành, nghề đầu tư ra nước ngoài có\nđiều kiện theo quy định tại khoản 1 Điều 41 của Luật này;\nb) Dự án đầu tư ra nước ngoài gắn với quốc phòng, an ninh triển khai theo\nthỏa thuận giữa Chính phủ Việt Nam và Chính phủ các nước;\nc) Dự án đầu tư ra nước ngoài của các tập đoàn, tổng công ty nhà nước và tổ\nchức kinh tế khác theo quy định của Chính phủ.\n4. Chính phủ quy định chi tiết Điều này; quy định về điều kiện, hồ sơ, trình\ntự thủ tục cấp, điều chỉnh, chấm dứt hiệu lực của Giấy chứng nhận đăng ký đầu tư\nra nước ngoài và nội dung Giấy chứng nhận đăng ký đầu tư ra nước ngoài.\n\n[B-f79f725070650181] (nguồn: data/raw/luat143-2025.pdf | trang 31 | Điều 43)\nĐiều 43. Triển khai hoạt động đầu tư ở nước ngoài\nChính phủ quy định việc mở tài khoản vốn đầu tư ra nước ngoài, chuyển vốn\nđầu tư ra nước ngoài, sử dụng lợi nhuận ở nước ngoài, chuyển lợi nhuận về nước\nvà việc triển khai hoạt động đầu tư ở nước ngoài.",
+    "final_context_ids": [
+      "B-4679425b231441ae",
+      "B-30b81c76d49df66f",
+      "B-67bca7e9097c9c87",
+      "B-f79f725070650181"
+    ],
+    "n_searches": 3,
+    "usage": {
+      "llm_calls": 4,
+      "llm_retries": 0,
+      "input_tokens": 10024,
+      "output_tokens": 950,
+      "thinking_tokens": 0,
+      "llm_seconds": 14.57,
+      "retrieval_seconds": 1.404,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 15.99
+  },
+  {
+    "query_id": "t02",
+    "split": "test",
+    "question": "Một công ty được thành lập theo pháp luật nước ngoài, kinh doanh tại Việt Nam thì được coi là loại nhà đầu tư nào?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Công ty này được coi là **nhà đầu tư nước ngoài**. Theo luật, nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài hoặc tổ chức thành lập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam [B-0a9a8be259cae4c2].\n\nLuật chia nhà đầu tư thành ba loại: nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài [B-0a9a8be259cae4c2]. Công ty của bạn không thuộc hai loại kia, vì:\n- **Nhà đầu tư trong nước** là cá nhân có quốc tịch Việt Nam, hoặc tổ chức kinh tế không có nhà đầu tư nước ngoài là thành viên hay cổ đông [B-0a9a8be259cae4c2].\n- **Tổ chức kinh tế** phải được thành lập và hoạt động theo pháp luật Việt Nam [B-0a9a8be259cae4c2]. **Tổ chức kinh tế có vốn đầu tư nước ngoài** là tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông [B-0a9a8be259cae4c2].\n\nKhi là nhà đầu tư nước ngoài, công ty được thành lập tổ chức kinh tế để thực hiện dự án đầu tư trước khi làm thủ tục cấp hoặc điều chỉnh Giấy chứng nhận đăng ký đầu tư. Tuy nhiên, khi làm thủ tục thành lập tổ chức kinh tế, công ty phải đáp ứng điều kiện tiếp cận thị trường dành cho nhà đầu tư nước ngoài tại Điều 8 [B-d809ebe15fe79a20].",
+    "citations": [
+      "B-0a9a8be259cae4c2",
+      "B-d809ebe15fe79a20"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "nhà đầu tư nước ngoài là tổ chức thành lập theo pháp luật nước ngoài",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-0a9a8be259cae4c2",
+            "page": 2,
+            "article": 3,
+            "score": 0.7668
+          },
+          {
+            "id": "B-d809ebe15fe79a20",
+            "page": 14,
+            "article": 19,
+            "score": 0.7472
+          },
+          {
+            "id": "B-5c7f4add003ca5ff",
+            "page": 15,
+            "article": 20,
+            "score": 0.7366
+          }
+        ],
+        "context_ids": [
+          "B-0a9a8be259cae4c2",
+          "B-d809ebe15fe79a20",
+          "B-5c7f4add003ca5ff"
+        ],
+        "context_chars": 2844
+      },
+      {
+        "event": "answer",
+        "answer": "Công ty này được coi là **nhà đầu tư nước ngoài**. Theo luật, nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài hoặc tổ chức thành lập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam [B-0a9a8be259cae4c2].\n\nLuật chia nhà đầu tư thành ba loại: nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài [B-0a9a8be259cae4c2]. Công ty của bạn không thuộc hai loại kia, vì:\n- **Nhà đầu tư trong nước** là cá nhân có quốc tịch Việt Nam, hoặc tổ chức kinh tế không có nhà đầu tư nước ngoài là thành viên hay cổ đông [B-0a9a8be259cae4c2].\n- **Tổ chức kinh tế** phải được thành lập và hoạt động theo pháp luật Việt Nam [B-0a9a8be259cae4c2]. **Tổ chức kinh tế có vốn đầu tư nước ngoài** là tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông [B-0a9a8be259cae4c2].\n\nKhi là nhà đầu tư nước ngoài, công ty được thành lập tổ chức kinh tế để thực hiện dự án đầu tư trước khi làm thủ tục cấp hoặc điều chỉnh Giấy chứng nhận đăng ký đầu tư. Tuy nhiên, khi làm thủ tục thành lập tổ chức kinh tế, công ty phải đáp ứng điều kiện tiếp cận thị trường dành cho nhà đầu tư nước ngoài tại Điều 8 [B-d809ebe15fe79a20].",
+        "citations": [
+          "B-0a9a8be259cae4c2",
+          "B-d809ebe15fe79a20"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "nhà đầu tư nước ngoài là tổ chức thành lập theo pháp luật nước ngoài"
+    ],
+    "final_context": "[B-0a9a8be259cae4c2] (nguồn: data/raw/luat143-2025.pdf | trang 2-3 | Điều 3)\nĐiều 3. Giải thích từ ngữ (tiếp)\n17. Khu kinh tế là khu vực có ranh giới địa lý xác định, gồm nhiều khu chức\nnăng, được thành lập để thực hiện các mục tiêu thu hút đầu tư, phát triển kinh tế -\nxã hội và bảo vệ quốc phòng, an ninh.\n18. Nhà đầu tư là tổ chức, cá nhân thực hiện hoạt động đầu tư kinh doanh,\ngồm nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu\ntư nước ngoài.\n19. Nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành\nlập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam.\n20. Nhà đầu tư trong nước là cá nhân có quốc tịch Việt Nam, tổ chức kinh\ntế không có nhà đầu tư nước ngoài là thành viên hoặc cổ đông.\n21. Tổ chức kinh tế là tổ chức được thành lập và hoạt động theo quy định\ncủa pháp luật Việt Nam, gồm doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã và tổ\nchức khác thực hiện hoạt động đầu tư kinh doanh.\n22. Tổ chức kinh tế có vốn đầu tư nước ngoài là tổ chức kinh tế có nhà đầu\ntư nước ngoài là thành viên hoặc cổ đông.\n\n[B-d809ebe15fe79a20] (nguồn: data/raw/luat143-2025.pdf | trang 14-15 | Điều 19)\nĐiều 19. Đầu tư thành lập tổ chức kinh tế\n1. Nhà đầu tư trong nước thành lập tổ chức kinh tế theo quy định của pháp\nluật về doanh nghiệp và pháp luật tương ứng với từng loại hình tổ chức kinh tế.\n2. Nhà đầu tư nước ngoài được thành lập tổ chức kinh tế thực hiện dự án đầu\ntư trước khi thực hiện thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư và\nphải đáp ứng điều kiện tiếp cận thị trường đối với nhà đầu tư nước ngoài quy định\ntại Điều 8 của Luật này khi thực hiện thủ tục thành lập tổ chức kinh tế.\n3. Chính phủ quy định chi tiết Điều này.\n\n[B-5c7f4add003ca5ff] (nguồn: data/raw/luat143-2025.pdf | trang 15 | Điều 20)\nĐiều 20. Thực hiện hoạt động đầu tư của tổ chức kinh tế có vốn đầu tư\nnước ngoài\n1. Tổ chức kinh tế phải đáp ứng điều kiện và thực hiện thủ tục đầu tư theo\nquy định đối với nhà đầu tư nước ngoài khi đầu tư góp vốn, mua cổ phần, mua\nphần vốn góp của tổ chức kinh tế khác; thực hiện dự án đầu tư khác nếu tổ chức\nkinh tế đó thuộc một trong các trường hợp sau đây:\na) Có nhà đầu tư nước ngoài nắm giữ trên 50% vốn điều lệ hoặc có đa số thành\nviên hợp danh là cá nhân nước ngoài đối với tổ chức kinh tế là công ty hợp danh;\nb) Có tổ chức kinh tế quy định tại điểm a khoản này nắm giữ trên 50% vốn\nđiều lệ;\nc) Có nhà đầu tư nước ngoài và tổ chức kinh tế quy định tại điểm a khoản\nnày nắm giữ trên 50% vốn điều lệ.\n2. Tổ chức kinh tế không thuộc trường hợp quy định tại các điểm a, b và c\nkhoản 1 Điều này thực hiện điều kiện và thủ tục đầu tư theo quy định đối với nhà\nđầu tư trong nước khi đầu tư thành lập tổ chức kinh tế khác; đầu tư theo hình thức\ngóp vốn, mua cổ phần, mua phần vốn góp của tổ chức kinh tế khác; đầu tư theo\nhình thức hợp đồng BCC.",
+    "final_context_ids": [
+      "B-0a9a8be259cae4c2",
+      "B-d809ebe15fe79a20",
+      "B-5c7f4add003ca5ff"
+    ],
+    "n_searches": 1,
+    "usage": {
+      "llm_calls": 2,
+      "llm_retries": 0,
+      "input_tokens": 4594,
+      "output_tokens": 888,
+      "thinking_tokens": 0,
+      "llm_seconds": 9.77,
+      "retrieval_seconds": 0.487,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 10.25
+  },
+  {
+    "query_id": "t03",
+    "split": "test",
+    "question": "Sau bao lâu kể từ khi kết thúc tiến độ thực hiện mục tiêu hoạt động thì cơ quan đăng ký đầu tư có thể chấm dứt dự án?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Cơ quan đăng ký đầu tư có thể chấm dứt hoặc chấm dứt một phần hoạt động của dự án sau **24 tháng** kể từ khi kết thúc tiến độ thực hiện mục tiêu hoạt động [B-2b7d8deec90172dc].\n\n**Cách tính mốc 24 tháng:** Tính từ khi kết thúc tiến độ thực hiện các mục tiêu hoạt động của dự án, hoặc mục tiêu của từng giai đoạn (nếu có). Tiến độ này ghi trong một trong các văn bản sau: văn bản chấp thuận chủ trương đầu tư, Giấy chứng nhận đăng ký đầu tư, hoặc bản điều chỉnh của các văn bản đó [B-2b7d8deec90172dc].\n\n**Điều kiện để chấm dứt (theo điểm b khoản 2 Điều 36):**\n- Hết 24 tháng mà nhà đầu tư vẫn chưa hoàn thành mục tiêu hoạt động đó [B-2b7d8deec90172dc].\n- Dự án không thuộc trường hợp được điều chỉnh tiến độ theo quy định [B-2b7d8deec90172dc].\n\n**Ngoại lệ:** Quy định này không áp dụng nếu dự án thuộc trường hợp bị thu hồi đất theo pháp luật về đất đai (điểm đ khoản 2 Điều 36) [B-2b7d8deec90172dc][B-d4340505f6e7f329].",
+    "citations": [
+      "B-2b7d8deec90172dc",
+      "B-d4340505f6e7f329"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "chấm dứt hoạt động dự án đầu tư không thực hiện tiến độ",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-2b7d8deec90172dc",
+            "page": 27,
+            "article": 36,
+            "score": 0.8077
+          },
+          {
+            "id": "B-d4340505f6e7f329",
+            "page": 28,
+            "article": 36,
+            "score": 0.7735
+          },
+          {
+            "id": "B-f15035f21c9fb383",
+            "page": 28,
+            "article": 36,
+            "score": 0.7707
+          }
+        ],
+        "context_ids": [
+          "B-2b7d8deec90172dc",
+          "B-d4340505f6e7f329"
+        ],
+        "context_chars": 2324
+      },
+      {
+        "event": "answer",
+        "answer": "Cơ quan đăng ký đầu tư có thể chấm dứt hoặc chấm dứt một phần hoạt động của dự án sau **24 tháng** kể từ khi kết thúc tiến độ thực hiện mục tiêu hoạt động [B-2b7d8deec90172dc].\n\n**Cách tính mốc 24 tháng:** Tính từ khi kết thúc tiến độ thực hiện các mục tiêu hoạt động của dự án, hoặc mục tiêu của từng giai đoạn (nếu có). Tiến độ này ghi trong một trong các văn bản sau: văn bản chấp thuận chủ trương đầu tư, Giấy chứng nhận đăng ký đầu tư, hoặc bản điều chỉnh của các văn bản đó [B-2b7d8deec90172dc].\n\n**Điều kiện để chấm dứt (theo điểm b khoản 2 Điều 36):**\n- Hết 24 tháng mà nhà đầu tư vẫn chưa hoàn thành mục tiêu hoạt động đó [B-2b7d8deec90172dc].\n- Dự án không thuộc trường hợp được điều chỉnh tiến độ theo quy định [B-2b7d8deec90172dc].\n\n**Ngoại lệ:** Quy định này không áp dụng nếu dự án thuộc trường hợp bị thu hồi đất theo pháp luật về đất đai (điểm đ khoản 2 Điều 36) [B-2b7d8deec90172dc][B-d4340505f6e7f329].",
+        "citations": [
+          "B-2b7d8deec90172dc",
+          "B-d4340505f6e7f329"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "chấm dứt hoạt động dự án đầu tư không thực hiện tiến độ"
+    ],
+    "final_context": "[B-2b7d8deec90172dc] (nguồn: data/raw/luat143-2025.pdf | trang 27-28 | Điều 36)\nĐiều 36. Chấm dứt hoạt động của dự án đầu tư\n1. Nhà đầu tư chấm dứt hoạt động đầu tư, dự án đầu tư trong các trường hợp\nsau đây:\na) Nhà đầu tư quyết định chấm dứt hoạt động của dự án đầu tư;\nb) Theo các điều kiện chấm dứt hoạt động được quy định trong hợp đồng,\nđiều lệ doanh nghiệp;\nc) Hết thời hạn hoạt động của dự án đầu tư.\n2. Cơ quan đăng ký đầu tư chấm dứt hoặc chấm dứt một phần hoạt động của\ndự án đầu tư trong các trường hợp sau đây:\na) Dự án đầu tư thuộc một trong các trường hợp quy định tại khoản 2 và\nkhoản 3 Điều 35 của Luật này mà nhà đầu tư không có khả năng khắc phục điều\nkiện ngừng hoạt động;\nb) Sau 24 tháng kể từ thời điểm kết thúc tiến độ thực hiện các mục tiêu hoạt\nđộng của dự án đầu tư hoặc mục tiêu hoạt động của từng giai đoạn (nếu có) quy\nđịnh tại văn bản chấp thuận chủ trương đầu tư, Giấy chứng nhận đăng ký đầu tư\nhoặc văn bản chấp thuận điều chỉnh chủ trương đầu tư, Giấy chứng nhận đăng ký\nđầu tư điều chỉnh mà nhà đầu tư vẫn không hoàn thành mục tiêu hoạt động này và\nkhông thuộc trường hợp được điều chỉnh tiến độ theo quy định, trừ trường hợp quy\nđịnh tại điểm đ khoản này;\n\n[B-d4340505f6e7f329] (nguồn: data/raw/luat143-2025.pdf | trang 28 | Điều 36)\nĐiều 36. Chấm dứt hoạt động của dự án đầu tư (tiếp)\nc) Nhà đầu tư không được tiếp tục sử dụng địa điểm đầu tư và không thực hiện\nthủ tục điều chỉnh địa điểm đầu tư trong thời hạn 06 tháng kể từ ngày không được\ntiếp tục sử dụng địa điểm đầu tư, trừ trường hợp quy định tại điểm đ khoản này;\nd) Dự án đầu tư đã ngừng hoạt động và hết thời hạn 12 tháng kể từ ngày\nngừng hoạt động, cơ quan đăng ký đầu tư không liên lạc được với nhà đầu tư hoặc\nđại diện hợp pháp của nhà đầu tư;\nđ) Dự án đầu tư thuộc trường hợp bị thu hồi đất theo quy định của pháp luật\nvề đất đai;\ne) Nhà đầu tư không ký quỹ hoặc không có bảo lãnh nghĩa vụ ký quỹ theo quy\nđịnh của pháp luật đối với dự án đầu tư thuộc diện bảo đảm thực hiện dự án đầu tư;\ng) Nhà đầu tư thực hiện hoạt động đầu tư trên cơ sở giao dịch dân sự giả tạo\ntheo quy định của pháp luật về dân sự;\nh) Theo bản án, quyết định của Tòa án, phán quyết trọng tài;\ni) Tổ chức kinh tế đã giải thể nhưng không chấm dứt hoạt động hoặc không\nchuyển nhượng, chuyển quyền sở hữu khác theo quy định pháp luật đối với dự án\nđầu tư.",
+    "final_context_ids": [
+      "B-2b7d8deec90172dc",
+      "B-d4340505f6e7f329"
+    ],
+    "n_searches": 1,
+    "usage": {
+      "llm_calls": 2,
+      "llm_retries": 0,
+      "input_tokens": 4304,
+      "output_tokens": 704,
+      "thinking_tokens": 0,
+      "llm_seconds": 8.52,
+      "retrieval_seconds": 0.463,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 8.98
+  },
+  {
+    "query_id": "t04",
+    "split": "test",
+    "question": "Nhà đầu tư có dự án ở nước ngoài phải gửi báo cáo tình hình hoạt động bao lâu một lần và gửi cho ai?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Theo Điều 48 Luật Đầu tư 143/2025/QH15, chế độ báo cáo của nhà đầu tư có dự án đầu tư ra nước ngoài như sau:\n\n1. **Bao lâu một lần:** Nhà đầu tư gửi báo cáo tình hình hoạt động của dự án định kỳ 06 tháng và hằng năm [B-71dfbbff0a0b5b66].\n2. **Gửi cho ai:** Bộ Tài chính, Ngân hàng Nhà nước Việt Nam và Cơ quan đại diện Việt Nam tại nước tiếp nhận đầu tư [B-71dfbbff0a0b5b66].\n\n**Các nghĩa vụ báo cáo khác có liên quan:**\n- **Thông báo ban đầu:** Trong vòng 60 ngày kể từ khi dự án được nước tiếp nhận đầu tư chấp thuận hoặc cấp phép, nhà đầu tư phải thông báo bằng văn bản về việc thực hiện hoạt động đầu tư ở nước ngoài. Kèm theo là bản sao văn bản chấp thuận hoặc tài liệu chứng minh quyền hoạt động đầu tư. Thông báo gửi cho Bộ Tài chính, Ngân hàng Nhà nước Việt Nam và Cơ quan đại diện Việt Nam tại nước đó [B-71dfbbff0a0b5b66].\n- **Báo cáo sau quyết toán thuế:** Trong vòng 06 tháng kể từ ngày có báo cáo quyết toán thuế (hoặc văn bản có giá trị pháp lý tương đương theo pháp luật nước tiếp nhận), nhà đầu tư báo cáo tình hình hoạt động của dự án. Kèm theo là báo cáo tài chính và báo cáo quyết toán thuế (hoặc văn bản tương đương). Báo cáo gửi cho ba cơ quan nêu trên và cơ quan quản lý nhà nước có thẩm quyền [B-d5ba860915fd82bb].\n- **Dự án có sử dụng vốn nhà nước:** Ngoài các báo cáo trên, nhà đầu tư còn phải báo cáo theo pháp luật về quản lý và đầu tư vốn nhà nước tại doanh nghiệp [B-d5ba860915fd82bb].\n- **Hình thức báo cáo:** Báo cáo được lập bằng văn bản và gửi qua Hệ thống thông tin quốc gia về đầu tư [B-d5ba860915fd82bb].",
+    "citations": [
+      "B-71dfbbff0a0b5b66",
+      "B-d5ba860915fd82bb"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "chế độ báo cáo hoạt động đầu tư ra nước ngoài",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-5073689a2834db3c",
+            "page": 36,
+            "article": 48,
+            "score": 0.8304
+          },
+          {
+            "id": "B-71dfbbff0a0b5b66",
+            "page": 36,
+            "article": 48,
+            "score": 0.8133
+          },
+          {
+            "id": "B-d5ba860915fd82bb",
+            "page": 37,
+            "article": 48,
+            "score": 0.8028
+          }
+        ],
+        "context_ids": [
+          "B-5073689a2834db3c",
+          "B-71dfbbff0a0b5b66",
+          "B-d5ba860915fd82bb"
+        ],
+        "context_chars": 2747
+      },
+      {
+        "event": "answer",
+        "answer": "Theo Điều 48 Luật Đầu tư 143/2025/QH15, chế độ báo cáo của nhà đầu tư có dự án đầu tư ra nước ngoài như sau:\n\n1. **Bao lâu một lần:** Nhà đầu tư gửi báo cáo tình hình hoạt động của dự án định kỳ 06 tháng và hằng năm [B-71dfbbff0a0b5b66].\n2. **Gửi cho ai:** Bộ Tài chính, Ngân hàng Nhà nước Việt Nam và Cơ quan đại diện Việt Nam tại nước tiếp nhận đầu tư [B-71dfbbff0a0b5b66].\n\n**Các nghĩa vụ báo cáo khác có liên quan:**\n- **Thông báo ban đầu:** Trong vòng 60 ngày kể từ khi dự án được nước tiếp nhận đầu tư chấp thuận hoặc cấp phép, nhà đầu tư phải thông báo bằng văn bản về việc thực hiện hoạt động đầu tư ở nước ngoài. Kèm theo là bản sao văn bản chấp thuận hoặc tài liệu chứng minh quyền hoạt động đầu tư. Thông báo gửi cho Bộ Tài chính, Ngân hàng Nhà nước Việt Nam và Cơ quan đại diện Việt Nam tại nước đó [B-71dfbbff0a0b5b66].\n- **Báo cáo sau quyết toán thuế:** Trong vòng 06 tháng kể từ ngày có báo cáo quyết toán thuế (hoặc văn bản có giá trị pháp lý tương đương theo pháp luật nước tiếp nhận), nhà đầu tư báo cáo tình hình hoạt động của dự án. Kèm theo là báo cáo tài chính và báo cáo quyết toán thuế (hoặc văn bản tương đương). Báo cáo gửi cho ba cơ quan nêu trên và cơ quan quản lý nhà nước có thẩm quyền [B-d5ba860915fd82bb].\n- **Dự án có sử dụng vốn nhà nước:** Ngoài các báo cáo trên, nhà đầu tư còn phải báo cáo theo pháp luật về quản lý và đầu tư vốn nhà nước tại doanh nghiệp [B-d5ba860915fd82bb].\n- **Hình thức báo cáo:** Báo cáo được lập bằng văn bản và gửi qua Hệ thống thông tin quốc gia về đầu tư [B-d5ba860915fd82bb].",
+        "citations": [
+          "B-71dfbbff0a0b5b66",
+          "B-d5ba860915fd82bb"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "chế độ báo cáo hoạt động đầu tư ra nước ngoài"
+    ],
+    "final_context": "[B-5073689a2834db3c] (nguồn: data/raw/luat143-2025.pdf | trang 36 | Điều 48)\nĐiều 48. Chế độ báo cáo hoạt động đầu tư ở nước ngoài\n1. Cơ quan, tổ chức, cá nhân thực hiện chế độ báo cáo bao gồm:\na) Bộ, cơ quan ngang Bộ có nhiệm vụ quản lý hoạt động đầu tư ra nước\nngoài theo quy định của pháp luật, cơ quan đại diện vốn nhà nước tại doanh nghiệp;\nb) Nhà đầu tư thực hiện dự án đầu tư ra nước ngoài theo quy định của Luật này.\n2. Chế độ báo cáo đối với các đối tượng quy định tại điểm a khoản 1 Điều\nnày thực hiện như sau:\na) Định kỳ hằng năm, có báo cáo tình hình quản lý đối với hoạt động đầu tư\nra nước ngoài theo chức năng, nhiệm vụ của mình gửi Bộ Tài chính tổng hợp, báo\ncáo Thủ tướng Chính phủ;\nb) Định kỳ hằng năm, Bộ Tài chính báo cáo Thủ tướng Chính phủ về tình\nhình đầu tư ra nước ngoài.\n3. Chế độ báo cáo của nhà đầu tư được thực hiện như sau:\n\n[B-71dfbbff0a0b5b66] (nguồn: data/raw/luat143-2025.pdf | trang 36-37 | Điều 48)\nĐiều 48. Chế độ báo cáo hoạt động đầu tư ở nước ngoài (tiếp)\na) Trong thời hạn 60 ngày kể từ ngày dự án đầu tư được chấp thuận hoặc cấp\nphép theo quy định của pháp luật nước tiếp nhận đầu tư, nhà đầu tư phải gửi thông\nbáo bằng văn bản về việc thực hiện hoạt động đầu tư ở nước ngoài kèm theo bản\nsao văn bản chấp thuận dự án đầu tư hoặc tài liệu chứng minh quyền hoạt động đầu\ntư tại nước tiếp nhận đầu tư cho Bộ Tài chính, Ngân hàng Nhà nước Việt Nam, Cơ\nquan đại diện Việt Nam tại nước tiếp nhận đầu tư;\nb) Định kỳ 06 tháng, hằng năm, nhà đầu tư gửi báo cáo tình hình hoạt động\ncủa dự án đầu tư cho Bộ Tài chính, Ngân hàng Nhà nước Việt Nam, Cơ quan đại\ndiện Việt Nam tại nước tiếp nhận đầu tư;\n\n[B-d5ba860915fd82bb] (nguồn: data/raw/luat143-2025.pdf | trang 37 | Điều 48)\nĐiều 48. Chế độ báo cáo hoạt động đầu tư ở nước ngoài (tiếp)\nc) Trong thời hạn 06 tháng kể từ ngày có báo cáo quyết toán thuế hoặc văn\nbản có giá trị pháp lý tương đương theo quy định của pháp luật nước tiếp nhận đầu\ntư, nhà đầu tư báo cáo tình hình hoạt động của dự án đầu tư kèm theo báo cáo tài\nchính, báo cáo quyết toán thuế hoặc văn bản có giá trị pháp lý tương đương theo\nquy định của pháp luật nước tiếp nhận đầu tư gửi Bộ Tài chính, Ngân hàng Nhà\nnước Việt Nam, Cơ quan đại diện Việt Nam tại nước tiếp nhận đầu tư và cơ quan\nquản lý nhà nước có thẩm quyền theo quy định của Luật này và quy định khác của\npháp luật có liên quan;\nd) Đối với dự án đầu tư ra nước ngoài có sử dụng vốn nhà nước, ngoài việc\nthực hiện chế độ báo cáo quy định tại các điểm a, b và c khoản này, nhà đầu tư phải\nthực hiện chế độ báo cáo đầu tư theo quy định của pháp luật về quản lý và đầu tư\nvốn nhà nước tại doanh nghiệp.\n4. Báo cáo quy định tại khoản 2 và khoản 3 Điều này được thực hiện bằng\nvăn bản và thông qua Hệ thống thông tin quốc gia về đầu tư.",
+    "final_context_ids": [
+      "B-5073689a2834db3c",
+      "B-71dfbbff0a0b5b66",
+      "B-d5ba860915fd82bb"
+    ],
+    "n_searches": 1,
+    "usage": {
+      "llm_calls": 2,
+      "llm_retries": 0,
+      "input_tokens": 4554,
+      "output_tokens": 1079,
+      "thinking_tokens": 0,
+      "llm_seconds": 10.39,
+      "retrieval_seconds": 0.444,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 10.84
+  },
+  {
+    "query_id": "t05",
+    "split": "test",
+    "question": "Luật Đầu tư số 143/2025/QH15 có hiệu lực thi hành từ ngày nào?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Theo Điều 51, Luật Đầu tư số 143/2025/QH15 có hiệu lực thi hành từ ngày 01/03/2026, trừ hai ngoại lệ sau [B-fbf3fa0919e2dd84]:\n- Điều 7 và Danh mục ngành, nghề đầu tư kinh doanh có điều kiện tại Phụ lục IV có hiệu lực từ ngày 01/7/2026 [B-fbf3fa0919e2dd84].\n- Khoản 3 Điều 50 có hiệu lực từ ngày 01/01/2026 [B-fbf3fa0919e2dd84].\n\nLuật Đầu tư năm 2020 (Luật số 61/2020/QH14 và các luật sửa đổi, bổ sung) hết hiệu lực từ ngày Luật này có hiệu lực thi hành. Riêng Điều 7 và Danh mục ngành, nghề đầu tư kinh doanh có điều kiện tại Phụ lục IV của Luật Đầu tư năm 2020 hết hiệu lực từ ngày 01/7/2026 [B-fbf3fa0919e2dd84].",
+    "citations": [
+      "B-fbf3fa0919e2dd84"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "hiệu lực thi hành",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-fbf3fa0919e2dd84",
+            "page": 39,
+            "article": 51,
+            "score": 0.7203
+          },
+          {
+            "id": "B-4d770a6b103678b9",
+            "page": 39,
+            "article": 52,
+            "score": 0.6871
+          },
+          {
+            "id": "B-0b85056d7951b96e",
+            "page": 39,
+            "article": 51,
+            "score": 0.6848
+          }
+        ],
+        "context_ids": [
+          "B-fbf3fa0919e2dd84",
+          "B-4d770a6b103678b9",
+          "B-0b85056d7951b96e"
+        ],
+        "context_chars": 2703
+      },
+      {
+        "event": "answer",
+        "answer": "Theo Điều 51, Luật Đầu tư số 143/2025/QH15 có hiệu lực thi hành từ ngày 01/03/2026, trừ hai ngoại lệ sau [B-fbf3fa0919e2dd84]:\n- Điều 7 và Danh mục ngành, nghề đầu tư kinh doanh có điều kiện tại Phụ lục IV có hiệu lực từ ngày 01/7/2026 [B-fbf3fa0919e2dd84].\n- Khoản 3 Điều 50 có hiệu lực từ ngày 01/01/2026 [B-fbf3fa0919e2dd84].\n\nLuật Đầu tư năm 2020 (Luật số 61/2020/QH14 và các luật sửa đổi, bổ sung) hết hiệu lực từ ngày Luật này có hiệu lực thi hành. Riêng Điều 7 và Danh mục ngành, nghề đầu tư kinh doanh có điều kiện tại Phụ lục IV của Luật Đầu tư năm 2020 hết hiệu lực từ ngày 01/7/2026 [B-fbf3fa0919e2dd84].",
+        "citations": [
+          "B-fbf3fa0919e2dd84"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "hiệu lực thi hành"
+    ],
+    "final_context": "[B-fbf3fa0919e2dd84] (nguồn: data/raw/luat143-2025.pdf | trang 39 | Điều 51)\nĐiều 51. Hiệu lực thi hành\n1. Luật này có hiệu lực thi hành từ ngày 01 tháng 03 năm 2026, trừ trường\nhợp quy định tại khoản 2 và khoản 3 Điều này.\n2. Điều 7 và Danh mục ngành, nghề đầu tư kinh doanh có điều kiện quy định\ntại Phụ lục IV ban hành kèm theo Luật này có hiệu lực thi hành từ ngày 01 tháng\n7 năm 2026.\n3. Khoản 3 Điều 50 của Luật này có hiệu lực thi hành từ ngày 01 tháng 01\nnăm 2026.\n4. Luật Đầu tư số 61/2020/QH14 đã được sửa đổi, bổ sung một số điều theo\nLuật số 72/2020/QH14, Luật số 03/2022/QH15, Luật số 05/2022/QH15, Luật\nsố 08/2022/QH15, Luật số 09/2022/QH15, Luật số 20/2023/QH15, Luật\nsố 26/2023/QH15, Luật số 27/2023/QH15, Luật số 28/2023/QH15, Luật\nsố 31/2024/QH15, Luật số 33/2024/QH15, Luật số 43/2024/QH15, Luật\nsố 57/2024/QH15 và Luật số 90/2025/QH15 (sau đây gọi là Luật Đầu tư năm 2020)\nhết hiệu lực kể từ ngày Luật này có hiệu lực thi hành, trừ Điều 7 và Danh mục\nngành, nghề đầu tư kinh doanh có điều kiện quy định tại Phụ lục IV ban hành kèm\ntheo Luật Đầu tư năm 2020 hết hiệu lực kể từ ngày 01 tháng 7 năm 2026.\n\n[B-4d770a6b103678b9] (nguồn: data/raw/luat143-2025.pdf | trang 39-40 | Điều 52)\nĐiều 52. Điều khoản chuyển tiếp\n1. Nhà đầu tư đã được cấp Giấy phép đầu tư, Giấy chứng nhận ưu đãi đầu\ntư, Giấy chứng nhận đầu tư, Giấy chứng nhận đăng ký đầu tư, văn bản quyết định\nchủ trương đầu tư, chấp thuận chủ trương đầu tư trước ngày Luật này có hiệu lực\nthi hành được thực hiện dự án đầu tư theo Giấy phép đầu tư, Giấy chứng nhận ưu\nđãi đầu tư, Giấy chứng nhận đầu tư, Giấy chứng nhận đăng ký đầu tư, văn bản\nquyết định chủ trương đầu tư, chấp thuận chủ trương đầu tư đã được cấp.\n\n[B-0b85056d7951b96e] (nguồn: data/raw/luat143-2025.pdf | trang 39 | Điều 51)\nĐiều 51. Hiệu lực thi hành (tiếp)\n5. Cá nhân là công dân Việt Nam được sử dụng số định danh cá nhân thay\nthế cho bản sao thẻ Căn cước công dân, Hộ chiếu và các giấy tờ chứng thực cá\nnhân khác khi thực hiện thủ tục hành chính quy định tại Luật Đầu tư trong trường\nhợp cơ sở dữ liệu quốc gia về dân cư kết nối với cơ sở dữ liệu quốc gia về đăng\nký đầu tư.\n6. Trường hợp văn bản quy phạm pháp luật dẫn chiếu đến quy định về quyết\nđịnh phê duyệt dự án, quyết định chủ trương đầu tư theo quy định của Luật Đầu tư thì\nthực hiện theo quy định về chấp thuận chủ trương đầu tư tại Luật này.\n7. Quy định tại khoản 1 Điều 41 của Luật Kinh doanh bất động sản số\n29/2023/QH15 được áp dụng đối với dự án đã được quyết định chủ trương đầu tư,\nquyết định điều chỉnh chủ trương đầu tư, chấp thuận chủ trương đầu tư, chấp thuận\nđiều chỉnh chủ trương đầu tư hoặc đã được cấp, điều chỉnh Giấy chứng nhận đăng\nký đầu tư theo quy định pháp luật về đầu tư.",
+    "final_context_ids": [
+      "B-fbf3fa0919e2dd84",
+      "B-4d770a6b103678b9",
+      "B-0b85056d7951b96e"
+    ],
+    "n_searches": 1,
+    "usage": {
+      "llm_calls": 2,
+      "llm_retries": 0,
+      "input_tokens": 4496,
+      "output_tokens": 538,
+      "thinking_tokens": 0,
+      "llm_seconds": 6.92,
+      "retrieval_seconds": 0.468,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 7.4
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "question": "Cơ quan đăng ký đầu tư phải cấp Giấy chứng nhận đăng ký đầu tư trong bao nhiêu ngày kể từ khi nhận đủ hồ sơ hợp lệ?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "stop_reason": "model_abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "thời hạn cấp Giấy chứng nhận đăng ký đầu tư kể từ ngày nhận đủ hồ sơ",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-1383436087665cca",
+            "page": 42,
+            "article": 52,
+            "score": 0.7368
+          },
+          {
+            "id": "B-ee1e89ea371943d8",
+            "page": 20,
+            "article": 26,
+            "score": 0.7362
+          },
+          {
+            "id": "B-4faa68df46076e62",
+            "page": 21,
+            "article": 27,
+            "score": 0.7294
+          }
+        ],
+        "context_ids": [
+          "B-1383436087665cca",
+          "B-ee1e89ea371943d8",
+          "B-4faa68df46076e62"
+        ],
+        "context_chars": 2508
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "trong thời hạn ngày làm việc cơ quan đăng ký đầu tư cấp Giấy chứng nhận",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-fced6d927e32f5bf",
+            "page": 41,
+            "article": 52,
+            "score": 0.747
+          },
+          {
+            "id": "B-4faa68df46076e62",
+            "page": 21,
+            "article": 27,
+            "score": 0.7409
+          },
+          {
+            "id": "B-ee1e89ea371943d8",
+            "page": 20,
+            "article": 26,
+            "score": 0.7378
+          }
+        ],
+        "context_ids": [
+          "B-1383436087665cca",
+          "B-ee1e89ea371943d8",
+          "B-4faa68df46076e62"
+        ],
+        "context_chars": 2508
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "thủ tục cấp Giấy chứng nhận đăng ký đầu tư thời hạn giải quyết",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-ee1e89ea371943d8",
+            "page": 20,
+            "article": 26,
+            "score": 0.7332
+          },
+          {
+            "id": "B-1383436087665cca",
+            "page": 42,
+            "article": 52,
+            "score": 0.7274
+          },
+          {
+            "id": "B-1456b3d32f36a55c",
+            "page": 21,
+            "article": 27,
+            "score": 0.7235
+          }
+        ],
+        "context_ids": [
+          "B-1383436087665cca",
+          "B-ee1e89ea371943d8",
+          "B-4faa68df46076e62"
+        ],
+        "context_chars": 2508
+      },
+      {
+        "event": "abstain",
+        "reason": "Tài liệu đã tìm được không nêu thời hạn (số ngày) để cơ quan đăng ký đầu tư cấp Giấy chứng nhận đăng ký đầu tư kể từ khi nhận đủ hồ sơ hợp lệ. Khoản 5 Điều 26 chỉ nói Chính phủ sẽ quy định về điều kiện, hồ sơ, trình tự, thủ tục cấp, điều chỉnh và nội dung Giấy chứng nhận đăng ký đầu tư [B-ee1e89ea371943d8]. Vì vậy, thời hạn cụ thể có thể nằm trong văn bản hướng dẫn của Chính phủ, không có trong các đoạn đã tìm. Các đoạn còn lại chỉ nói về loại dự án phải cấp Giấy chứng nhận, cơ quan có thẩm quyền cấp [B-4faa68df46076e62] và điều khoản chuyển tiếp [B-1383436087665cca], không nêu số ngày. Đã hết lượt tìm kiếm."
+      }
+    ],
+    "queries": [
+      "thời hạn cấp Giấy chứng nhận đăng ký đầu tư kể từ ngày nhận đủ hồ sơ",
+      "trong thời hạn ngày làm việc cơ quan đăng ký đầu tư cấp Giấy chứng nhận",
+      "thủ tục cấp Giấy chứng nhận đăng ký đầu tư thời hạn giải quyết"
+    ],
+    "final_context": "[B-1383436087665cca] (nguồn: data/raw/luat143-2025.pdf | trang 42 | Điều 52)\nĐiều 52. Điều khoản chuyển tiếp (tiếp)\nc) Trường hợp nhà đầu tư đã nộp hồ sơ hợp lệ đề nghị chấp thuận chủ trương\nđầu tư ra nước ngoài nhưng chưa được trả kết quả thì nhà đầu tư được tiếp tục sử\ndụng hồ sơ đã nộp để thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư (nếu\nthuộc diện phải cấp) theo quy định của Luật này.\n\n[B-ee1e89ea371943d8] (nguồn: data/raw/luat143-2025.pdf | trang 20-21 | Điều 26)\nĐiều 26. Dự án thuộc diện cấp Giấy chứng nhận đăng ký đầu tư\n1. Các dự án phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư\nbao gồm:\na) Dự án đầu tư của nhà đầu tư nước ngoài;\nb) Dự án đầu tư của tổ chức kinh tế quy định tại khoản 1 Điều 20 của Luật này.\n2. Các dự án không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu\ntư bao gồm:\na) Dự án đầu tư của nhà đầu tư trong nước;\nb) Dự án đầu tư của tổ chức kinh tế quy định tại khoản 2 Điều 20 của Luật này;\nc) Đầu tư theo hình thức góp vốn, mua cổ phần, mua phần vốn góp của tổ\nchức kinh tế.\n3. Đối với dự án đầu tư quy định tại Điều 24 của Luật này, nhà đầu tư trong\nnước, tổ chức kinh tế quy định tại khoản 2 Điều 20 của Luật này triển khai thực\nhiện dự án đầu tư sau khi được chấp thuận chủ trương đầu tư.\n4. Trường hợp nhà đầu tư có nhu cầu cấp Giấy chứng nhận đăng ký đầu tư\nđối với dự án đầu tư quy định tại điểm a và điểm b khoản 2 Điều này, nhà đầu tư\nthực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư.\n5. Chính phủ quy định về điều kiện, hồ sơ, trình tự, thủ tục cấp, điều chỉnh\nvà nội dung Giấy chứng nhận đăng ký đầu tư.\n\n[B-4faa68df46076e62] (nguồn: data/raw/luat143-2025.pdf | trang 21 | Điều 27)\nĐiều 27. Thẩm quyền cấp, điều chỉnh và thu hồi Giấy chứng nhận đăng (tiếp)\n3. Cơ quan đăng ký đầu tư nơi nhà đầu tư thực hiện dự án đầu tư đặt hoặc\ndự kiến đặt văn phòng điều hành để thực hiện dự án đầu tư cấp, điều chỉnh, thu hồi\nGiấy chứng nhận đăng ký đầu tư đối với dự án đầu tư sau đây:\na) Dự án đầu tư thực hiện tại 02 đơn vị hành chính cấp tỉnh trở lên;\nb) Dự án đầu tư thực hiện ở trong và ngoài khu công nghiệp, khu chế xuất,\nkhu công nghệ cao và khu kinh tế;\nc) Dự án đầu tư trong khu công nghiệp, khu chế xuất, khu công nghệ cao,\nkhu công nghệ số tập trung, khu kinh tế nơi chưa thành lập Ban quản lý khu công\nnghiệp, khu chế xuất, khu công nghệ cao, khu kinh tế.\n4. Cơ quan tiếp nhận hồ sơ dự án đầu tư là cơ quan có thẩm quyền cấp Giấy\nchứng nhận đăng ký đầu tư, trừ trường hợp dự án quy định tại khoản 1 và khoản 2\nĐiều 25 của Luật này.",
+    "final_context_ids": [
+      "B-1383436087665cca",
+      "B-ee1e89ea371943d8",
+      "B-4faa68df46076e62"
+    ],
+    "n_searches": 3,
+    "usage": {
+      "llm_calls": 4,
+      "llm_retries": 0,
+      "input_tokens": 10715,
+      "output_tokens": 834,
+      "thinking_tokens": 0,
+      "llm_seconds": 12.11,
+      "retrieval_seconds": 1.284,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 13.39
+  },
+  {
+    "query_id": "u05",
+    "split": "test",
+    "question": "Mức ký quỹ bảo đảm thực hiện dự án đầu tư là bao nhiêu phần trăm tổng vốn đầu tư?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "stop_reason": "model_abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "ký quỹ bảo đảm thực hiện dự án đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-9e8417206087b503",
+            "page": 23,
+            "article": 30,
+            "score": 0.7933
+          },
+          {
+            "id": "B-7b895db1dad63922",
+            "page": 41,
+            "article": 52,
+            "score": 0.7506
+          },
+          {
+            "id": "B-259740923414e7ea",
+            "page": 8,
+            "article": 10,
+            "score": 0.7063
+          }
+        ],
+        "context_ids": [
+          "B-9e8417206087b503",
+          "B-7b895db1dad63922",
+          "B-259740923414e7ea"
+        ],
+        "context_chars": 2757
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "mức ký quỹ tỷ lệ phần trăm tổng vốn đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-9e8417206087b503",
+            "page": 23,
+            "article": 30,
+            "score": 0.6683
+          },
+          {
+            "id": "B-18c9cf4e3eecda7f",
+            "page": 16,
+            "article": 21,
+            "score": 0.657
+          },
+          {
+            "id": "B-7b895db1dad63922",
+            "page": 41,
+            "article": 52,
+            "score": 0.6529
+          }
+        ],
+        "context_ids": [
+          "B-9e8417206087b503",
+          "B-7b895db1dad63922",
+          "B-259740923414e7ea"
+        ],
+        "context_chars": 2757
+      },
+      {
+        "event": "abstain",
+        "reason": "Tôi không tìm thấy mức ký quỹ tính theo phần trăm tổng vốn đầu tư trong các đoạn đã tra của Luật Đầu tư 143/2025/QH15. Điều 30 chỉ quy định: nhà đầu tư phải ký quỹ hoặc có bảo lãnh ngân hàng về nghĩa vụ ký quỹ khi dự án đề nghị Nhà nước giao đất, cho thuê đất hoặc cho phép chuyển mục đích sử dụng đất. Điều này cũng nêu các trường hợp không phải ký quỹ, ví dụ nhà đầu tư trúng đấu giá quyền sử dụng đất, trúng đấu thầu dự án có sử dụng đất hoặc trúng đấu giá quyền khai thác khoáng sản [B-9e8417206087b503]. Khoản 2 Điều 30 giao Chính phủ quy định chi tiết điều này [B-9e8417206087b503]. Vì vậy, mức ký quỹ cụ thể có thể nằm trong văn bản hướng dẫn của Chính phủ, nhưng văn bản đó không có trong các đoạn đã tra."
+      }
+    ],
+    "queries": [
+      "ký quỹ bảo đảm thực hiện dự án đầu tư",
+      "mức ký quỹ tỷ lệ phần trăm tổng vốn đầu tư"
+    ],
+    "final_context": "[B-9e8417206087b503] (nguồn: data/raw/luat143-2025.pdf | trang 23 | Điều 30)\nĐiều 30. Bảo đảm thực hiện dự án đầu tư\n1. Nhà đầu tư phải ký quỹ hoặc phải có bảo lãnh ngân hàng về nghĩa vụ ký\nquỹ để bảo đảm thực hiện dự án đầu tư có đề nghị Nhà nước giao đất, cho thuê đất,\ncho phép chuyển mục đích sử dụng đất, trừ các trường hợp sau đây:\na) Nhà đầu tư trúng đấu giá quyền sử dụng đất;\nb) Nhà đầu tư trúng đấu thầu thực hiện dự án đầu tư có sử dụng đất;\nc) Nhà đầu tư được Nhà nước giao đất, cho thuê đất trên cơ sở nhận chuyển\nnhượng dự án đầu tư đã thực hiện ký quỹ hoặc đã hoàn thành việc góp vốn, huy\nđộng vốn theo tiến độ quy định tại văn bản chấp thuận chủ trương đầu tư, Giấy\nchứng nhận đăng ký đầu tư;\nd) Nhà đầu tư được Nhà nước giao đất, cho thuê đất, chuyển mục đích sử\ndụng đất (nếu có) để thực hiện dự án đầu tư trên cơ sở nhận chuyển nhượng quyền\nsử dụng đất, tài sản gắn liền với đất của người sử dụng đất khác;\nđ) Nhà đầu tư trúng đấu giá quyền khai thác khoáng sản.\n2. Chính phủ quy định chi tiết Điều này.\n\n[B-7b895db1dad63922] (nguồn: data/raw/luat143-2025.pdf | trang 41 | Điều 52)\nĐiều 52. Điều khoản chuyển tiếp (tiếp)\n7. Dự án đầu tư đã thực hiện hoặc được chấp thuận, cho phép thực hiện theo\nquy định của pháp luật trước ngày 01 tháng 7 năm 2015 mà thuộc diện bảo đảm\nthực hiện dự án đầu tư theo quy định của Luật này thì không phải ký quỹ hoặc bảo\nlãnh ngân hàng về nghĩa vụ ký quỹ. Trường hợp nhà đầu tư điều chỉnh mục tiêu,\ntiến độ thực hiện dự án đầu tư, chuyển mục đích sử dụng đất sau khi Luật này có\nhiệu lực thi hành thì phải thực hiện ký quỹ hoặc phải có bảo lãnh ngân hàng về\nnghĩa vụ ký quỹ theo quy định của Luật này.\n8. Hợp đồng cung cấp dịch vụ đòi nợ ký kết trước ngày 01 tháng 01 năm\n2021 chấm dứt hiệu lực kể từ ngày 01 tháng 01 năm 2021; các bên tham gia hợp\nđồng được thực hiện các hoạt động để thanh lý hợp đồng cung cấp dịch vụ đòi nợ\ntheo quy định của pháp luật về dân sự và quy định khác của pháp luật có liên quan.\n9. Tổ chức kinh tế có vốn đầu tư nước ngoài được áp dụng điều kiện tiếp cận\nthị trường thuận lợi hơn điều kiện quy định tại Danh mục ban hành theo quy định\ntại Điều 8 của Luật này thì được tiếp tục áp dụng điều kiện theo quy định tại Giấy\nchứng nhận đăng ký đầu tư đã được cấp.\n\n[B-259740923414e7ea] (nguồn: data/raw/luat143-2025.pdf | trang 8 | Điều 10)\nĐiều 10. Bảo đảm hoạt động đầu tư kinh doanh (tiếp)\n2. Căn cứ điều kiện phát triển kinh tế - xã hội và nhu cầu thu hút đầu tư trong\ntừng thời kỳ, Thủ tướng Chính phủ quyết định áp dụng các hình thức bảo đảm của\nNhà nước để thực hiện dự án đầu tư thuộc thẩm quyền chấp thuận chủ trương đầu\ntư của Quốc hội, Thủ tướng Chính phủ và những dự án đầu tư phát triển kết cấu hạ\ntầng quan trọng khác.\n3. Chính phủ quy định chi tiết khoản 2 Điều này.",
+    "final_context_ids": [
+      "B-9e8417206087b503",
+      "B-7b895db1dad63922",
+      "B-259740923414e7ea"
+    ],
+    "n_searches": 2,
+    "usage": {
+      "llm_calls": 3,
+      "llm_retries": 0,
+      "input_tokens": 7667,
+      "output_tokens": 772,
+      "thinking_tokens": 0,
+      "llm_seconds": 10.22,
+      "retrieval_seconds": 0.837,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 11.06
+  },
+  {
+    "query_id": "u06",
+    "split": "test",
+    "question": "Doanh nghiệp có vốn đầu tư nước ngoài phải trả mức lương tối thiểu bao nhiêu cho người lao động Việt Nam?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "stop_reason": "model_abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "tổ chức kinh tế có vốn đầu tư nước ngoài người lao động tiền lương",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-5c7f4add003ca5ff",
+            "page": 15,
+            "article": 20,
+            "score": 0.6975
+          },
+          {
+            "id": "B-0a9a8be259cae4c2",
+            "page": 2,
+            "article": 3,
+            "score": 0.6946
+          },
+          {
+            "id": "B-2206fc7e96147f6d",
+            "page": 15,
+            "article": 20,
+            "score": 0.6859
+          }
+        ],
+        "context_ids": [
+          "B-5c7f4add003ca5ff",
+          "B-0a9a8be259cae4c2",
+          "B-2206fc7e96147f6d"
+        ],
+        "context_chars": 2741
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "mức lương tối thiểu quyền lợi người lao động",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-d2deaa774bdf5efa",
+            "page": 42,
+            "article": 52,
+            "score": 0.6136
+          },
+          {
+            "id": "B-6c1ef41314ce6339",
+            "page": 1,
+            "article": null,
+            "score": 0.5955
+          },
+          {
+            "id": "B-2bc6a34e63543c75",
+            "page": 8,
+            "article": 9,
+            "score": 0.5923
+          }
+        ],
+        "context_ids": [
+          "B-5c7f4add003ca5ff",
+          "B-0a9a8be259cae4c2",
+          "B-2206fc7e96147f6d",
+          "B-6c1ef41314ce6339"
+        ],
+        "context_chars": 2967
+      },
+      {
+        "event": "abstain",
+        "reason": "Tôi không tìm thấy mức lương tối thiểu mà doanh nghiệp có vốn đầu tư nước ngoài phải trả cho người lao động Việt Nam trong các đoạn Luật Đầu tư 143/2025/QH15 đã tra được. Tôi đã tìm 2 lần, với truy vấn về tiền lương của người lao động trong tổ chức kinh tế có vốn đầu tư nước ngoài và về mức lương tối thiểu. Các đoạn tìm được chỉ nói về: (1) định nghĩa tổ chức kinh tế có vốn đầu tư nước ngoài (Điều 3, khoản 22); (2) điều kiện và thủ tục đầu tư của các tổ chức này (Điều 20). Không đoạn nào nêu con số hay quy định về lương tối thiểu. Mức lương tối thiểu thường do pháp luật lao động và văn bản của Chính phủ quy định, không thuộc phạm vi Luật Đầu tư. Vì CONTEXT không có thông tin này, tôi không đưa ra con số nào."
+      }
+    ],
+    "queries": [
+      "tổ chức kinh tế có vốn đầu tư nước ngoài người lao động tiền lương",
+      "mức lương tối thiểu quyền lợi người lao động"
+    ],
+    "final_context": "[B-5c7f4add003ca5ff] (nguồn: data/raw/luat143-2025.pdf | trang 15 | Điều 20)\nĐiều 20. Thực hiện hoạt động đầu tư của tổ chức kinh tế có vốn đầu tư\nnước ngoài\n1. Tổ chức kinh tế phải đáp ứng điều kiện và thực hiện thủ tục đầu tư theo\nquy định đối với nhà đầu tư nước ngoài khi đầu tư góp vốn, mua cổ phần, mua\nphần vốn góp của tổ chức kinh tế khác; thực hiện dự án đầu tư khác nếu tổ chức\nkinh tế đó thuộc một trong các trường hợp sau đây:\na) Có nhà đầu tư nước ngoài nắm giữ trên 50% vốn điều lệ hoặc có đa số thành\nviên hợp danh là cá nhân nước ngoài đối với tổ chức kinh tế là công ty hợp danh;\nb) Có tổ chức kinh tế quy định tại điểm a khoản này nắm giữ trên 50% vốn\nđiều lệ;\nc) Có nhà đầu tư nước ngoài và tổ chức kinh tế quy định tại điểm a khoản\nnày nắm giữ trên 50% vốn điều lệ.\n2. Tổ chức kinh tế không thuộc trường hợp quy định tại các điểm a, b và c\nkhoản 1 Điều này thực hiện điều kiện và thủ tục đầu tư theo quy định đối với nhà\nđầu tư trong nước khi đầu tư thành lập tổ chức kinh tế khác; đầu tư theo hình thức\ngóp vốn, mua cổ phần, mua phần vốn góp của tổ chức kinh tế khác; đầu tư theo\nhình thức hợp đồng BCC.\n\n[B-0a9a8be259cae4c2] (nguồn: data/raw/luat143-2025.pdf | trang 2-3 | Điều 3)\nĐiều 3. Giải thích từ ngữ (tiếp)\n17. Khu kinh tế là khu vực có ranh giới địa lý xác định, gồm nhiều khu chức\nnăng, được thành lập để thực hiện các mục tiêu thu hút đầu tư, phát triển kinh tế -\nxã hội và bảo vệ quốc phòng, an ninh.\n18. Nhà đầu tư là tổ chức, cá nhân thực hiện hoạt động đầu tư kinh doanh,\ngồm nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu\ntư nước ngoài.\n19. Nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành\nlập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam.\n20. Nhà đầu tư trong nước là cá nhân có quốc tịch Việt Nam, tổ chức kinh\ntế không có nhà đầu tư nước ngoài là thành viên hoặc cổ đông.\n21. Tổ chức kinh tế là tổ chức được thành lập và hoạt động theo quy định\ncủa pháp luật Việt Nam, gồm doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã và tổ\nchức khác thực hiện hoạt động đầu tư kinh doanh.\n22. Tổ chức kinh tế có vốn đầu tư nước ngoài là tổ chức kinh tế có nhà đầu\ntư nước ngoài là thành viên hoặc cổ đông.\n\n[B-2206fc7e96147f6d] (nguồn: data/raw/luat143-2025.pdf | trang 15 | Điều 20)\nĐiều 20. Thực hiện hoạt động đầu tư của tổ chức kinh tế có vốn đầu tư (tiếp)\n3. Tổ chức kinh tế có vốn đầu tư nước ngoài đã được thành lập tại Việt Nam\nnếu có dự án đầu tư mới thì làm thủ tục thực hiện dự án đầu tư đó mà không nhất\nthiết phải thành lập tổ chức kinh tế mới.\n4. Chính phủ quy định về trình tự, thủ tục đầu tư thành lập tổ chức kinh tế\nvà thực hiện hoạt động đầu tư của nhà đầu tư nước ngoài, tổ chức kinh tế có vốn\nđầu tư nước ngoài.\n\n[B-6c1ef41314ce6339] (nguồn: data/raw/luat143-2025.pdf | trang 1)\nCăn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam đã được sửa đổi, bổ\nsung một số điều theo Nghị quyết số 203/2025/QH15;\nQuốc hội ban hành Luật Đầu tư.",
+    "final_context_ids": [
+      "B-5c7f4add003ca5ff",
+      "B-0a9a8be259cae4c2",
+      "B-2206fc7e96147f6d",
+      "B-6c1ef41314ce6339"
+    ],
+    "n_searches": 2,
+    "usage": {
+      "llm_calls": 3,
+      "llm_retries": 0,
+      "input_tokens": 7802,
+      "output_tokens": 795,
+      "thinking_tokens": 0,
+      "llm_seconds": 10.53,
+      "retrieval_seconds": 0.849,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 11.38
+  }
+]

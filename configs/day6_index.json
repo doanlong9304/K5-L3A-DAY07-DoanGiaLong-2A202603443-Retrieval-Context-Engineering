@@ -1,0 +1,32 @@
+{
+  "note": "Day 6 index reused as-is (read-only). Values copied from Day 6 configs/strategies.json and results/ingest_report.json.",
+  "corpus": {
+    "document_id": "luat-dau-tu-143-2025-qh15",
+    "source": "data/raw/luat143-2025.pdf",
+    "content_pages": 43,
+    "doc_version": "567993cfb60108a6d21b4dd102cfbad156db78953b6753a07ccf4e202964a6cb"
+  },
+  "embedding": {
+    "provider": "Google Gemini API (google-genai SDK)",
+    "model": "gemini-embedding-001",
+    "dimensions": 768,
+    "document_task_type": "RETRIEVAL_DOCUMENT",
+    "query_task_type": "RETRIEVAL_QUERY",
+    "price_per_1m_tokens_usd": 0.15
+  },
+  "store": {
+    "backend": "PostgreSQL 16 + pgvector 0.8.7",
+    "table": "lab_chunks",
+    "metric": "cosine distance (<=>), score = 1 - distance",
+    "search": "exact (sequential scan, no ANN index)",
+    "strategy": "B",
+    "expected_rows": {"A": 218, "B": 118},
+    "filterable": ["chapter", "section", "article"]
+  },
+  "docker": {
+    "compose_project": "day6_student_starter",
+    "container": "day6_student_starter-postgres-1",
+    "volume": "day6_student_starter_pg_data",
+    "host_port": 55633
+  }
+}

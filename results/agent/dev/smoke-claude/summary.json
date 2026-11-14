@@ -1,0 +1,51 @@
+{
+  "run": "smoke-claude",
+  "split": "dev",
+  "run_at": "2026-11-14T16:53:24+07:00",
+  "config": {
+    "model": "claude-opus-5-5",
+    "max_searches": 3,
+    "top_k": 3,
+    "budget": 3000,
+    "temperature": 0.0,
+    "max_turns": 6,
+    "retriever": "dense",
+    "context_budget_unit": "characters",
+    "filter": "user-provided chapter filter from cases.json when present"
+  },
+  "cases": 3,
+  "status": {
+    "answered": 2,
+    "abstain": 1
+  },
+  "stop_reasons": {
+    "answer": 2,
+    "model_abstain": 1
+  },
+  "tool_use": {
+    "cases_with_search": 3,
+    "N": 3,
+    "searches_per_case": {
+      "1": 1,
+      "3": 2
+    }
+  },
+  "tokens": {
+    "input_tokens": 24720,
+    "output_tokens": 3012,
+    "thinking_tokens": 0
+  },
+  "llm_calls": 10,
+  "llm_cost_usd": 0.1591,
+  "price_note": "list price USD per 1M tokens (input, output) as of 2026-11; free tier would be 0",
+  "served_models": [
+    "claude-opus-5-5"
+  ],
+  "embedding_api_calls": 6,
+  "seconds": {
+    "median_per_case": 16.0,
+    "total": 47.5
+  },
+  "errors": [],
+  "complete": true
+}

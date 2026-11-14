@@ -1,0 +1,5 @@
+# Day 7 dependencies (same versions as Day 6 where shared)
+psycopg[binary]==3.3.8
+python-dotenv>=1,<2
+google-genai==3.3.0   # query embeddings (gemini-embedding-001, same as the Day 6 index)
+anthropic==2.8.0      # agent LLM (Claude)

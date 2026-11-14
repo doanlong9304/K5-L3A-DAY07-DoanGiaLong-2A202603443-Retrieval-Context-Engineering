@@ -1,0 +1,2543 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Thời hạn hoạt động tối đa của dự án đầu tư trong khu kinh tế là bao lâu?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-0288b0e0f7ba0af3",
+        "score": 0.0328,
+        "page": 23,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 31,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-e7304ebd3af27c91",
+        "score": 0.0323,
+        "page": 24,
+        "page_end": 24,
+        "chapter": "IV",
+        "article": 31,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-fced6d927e32f5bf",
+        "score": 0.0317,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-0a9a8be259cae4c2",
+        "score": 0.0308,
+        "page": 2,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-2b7d8deec90172dc",
+        "score": 0.0303,
+        "page": 27,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-cf4631607814cb1c",
+        "score": 0.0289,
+        "page": 21,
+        "page_end": 22,
+        "chapter": "IV",
+        "article": 28,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 14
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-d4340505f6e7f329",
+        "score": 0.0288,
+        "page": 28,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 11
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-4faa68df46076e62",
+        "score": 0.0287,
+        "page": 21,
+        "page_end": 21,
+        "chapter": "IV",
+        "article": 27,
+        "hit": false,
+        "component_ranks": {
+          "dense": 14,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-1456b3d32f36a55c",
+        "score": 0.0278,
+        "page": 21,
+        "page_end": 21,
+        "chapter": "IV",
+        "article": 27,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-31bc316124419bb5",
+        "score": 0.0269,
+        "page": 25,
+        "page_end": 25,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false,
+        "component_ranks": {
+          "dense": 16,
+          "bm25-bigram": 13
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-0288b0e0f7ba0af3",
+      "B-e7304ebd3af27c91"
+    ],
+    "context_chars": 2020,
+    "context_hit": true,
+    "latency_ms": 8.9,
+    "gold_pages": [
+      23
+    ]
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Một dự án nằm ngoài khu kinh tế thì được phép hoạt động trong thời gian dài nhất là bao nhiêu năm?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-0288b0e0f7ba0af3",
+        "score": 0.0328,
+        "page": 23,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 31,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-e7304ebd3af27c91",
+        "score": 0.0308,
+        "page": 24,
+        "page_end": 24,
+        "chapter": "IV",
+        "article": 31,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-0a9a8be259cae4c2",
+        "score": 0.0306,
+        "page": 2,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-ec40f8d841582794",
+        "score": 0.0293,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false,
+        "component_ranks": {
+          "dense": 16,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-1456b3d32f36a55c",
+        "score": 0.0285,
+        "page": 21,
+        "page_end": 21,
+        "chapter": "IV",
+        "article": 27,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-d2deaa774bdf5efa",
+        "score": 0.0284,
+        "page": 42,
+        "page_end": 42,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 18,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-cf4631607814cb1c",
+        "score": 0.0281,
+        "page": 21,
+        "page_end": 22,
+        "chapter": "IV",
+        "article": 28,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 16
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-93772e4b1bdf2a46",
+        "score": 0.028,
+        "page": 11,
+        "page_end": 12,
+        "chapter": "III",
+        "article": 14,
+        "hit": false,
+        "component_ranks": {
+          "dense": 13,
+          "bm25-bigram": 10
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-7b895db1dad63922",
+        "score": 0.0276,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 10,
+          "bm25-bigram": 15
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-65a511d8b8c1ea11",
+        "score": 0.0267,
+        "page": 20,
+        "page_end": 20,
+        "chapter": "IV",
+        "article": 25,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 18
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-0288b0e0f7ba0af3",
+      "B-e7304ebd3af27c91"
+    ],
+    "context_chars": 2020,
+    "context_hit": true,
+    "latency_ms": 5.0,
+    "gold_pages": [
+      23
+    ]
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Tài sản hợp pháp của nhà đầu tư có bị quốc hữu hóa hay tịch thu bằng biện pháp hành chính không?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-2bc6a34e63543c75",
+        "score": 0.0328,
+        "page": 8,
+        "page_end": 8,
+        "chapter": "II",
+        "article": 9,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-0b6f226d8638bc81",
+        "score": 0.0323,
+        "page": 9,
+        "page_end": 9,
+        "chapter": "II",
+        "article": 11,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-0d831dd4fbfc1eb9",
+        "score": 0.0315,
+        "page": 4,
+        "page_end": 5,
+        "chapter": "I",
+        "article": 5,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-b806a73fb769f701",
+        "score": 0.0315,
+        "page": 9,
+        "page_end": 9,
+        "chapter": "II",
+        "article": 12,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-d4340505f6e7f329",
+        "score": 0.0305,
+        "page": 28,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-77ed886349b73469",
+        "score": 0.0301,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-749c448638f72173",
+        "score": 0.0275,
+        "page": 33,
+        "page_end": 33,
+        "chapter": "VI",
+        "article": 44,
+        "hit": false,
+        "component_ranks": {
+          "dense": 18,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-f15035f21c9fb383",
+        "score": 0.0274,
+        "page": 28,
+        "page_end": 29,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 20
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-c48ba126b95d11ad",
+        "score": 0.0152,
+        "page": 3,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-3951ca56707d19c3",
+        "score": 0.0149,
+        "page": 18,
+        "page_end": 18,
+        "chapter": "IV",
+        "article": 24,
+        "hit": false,
+        "component_ranks": {
+          "bm25-bigram": 7
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-2bc6a34e63543c75",
+      "B-0b6f226d8638bc81",
+      "B-0d831dd4fbfc1eb9"
+    ],
+    "context_chars": 2234,
+    "context_hit": true,
+    "latency_ms": 5.6,
+    "gold_pages": [
+      8
+    ]
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nhà đầu tư nước ngoài cần đáp ứng điều kiện gì để được chuyển vốn đầu tư ra nước ngoài?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-0b6f226d8638bc81",
+        "score": 0.0328,
+        "page": 9,
+        "page_end": 9,
+        "chapter": "II",
+        "article": 11,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-f79f725070650181",
+        "score": 0.0323,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 43,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-c4ce746ab3381482",
+        "score": 0.0303,
+        "page": 26,
+        "page_end": 26,
+        "chapter": "IV",
+        "article": 34,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-b3d29c458081a93d",
+        "score": 0.0297,
+        "page": 42,
+        "page_end": 42,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 10
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-67bca7e9097c9c87",
+        "score": 0.0296,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-e3ea25c94810b7be",
+        "score": 0.0292,
+        "page": 30,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.0292,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-1383436087665cca",
+        "score": 0.0289,
+        "page": 42,
+        "page_end": 42,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 17
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-2a38b8fa7e90b581",
+        "score": 0.0284,
+        "page": 15,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 21,
+        "hit": false,
+        "component_ranks": {
+          "dense": 10,
+          "bm25-bigram": 11
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-5073689a2834db3c",
+        "score": 0.0274,
+        "page": 36,
+        "page_end": 36,
+        "chapter": "VI",
+        "article": 48,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 14
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-0b6f226d8638bc81",
+      "B-f79f725070650181",
+      "B-c4ce746ab3381482"
+    ],
+    "context_chars": 1841,
+    "context_hit": true,
+    "latency_ms": 6.1,
+    "gold_pages": [
+      9
+    ]
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Tranh chấp giữa các nhà đầu tư mà có ít nhất một bên là nhà đầu tư nước ngoài có được giải quyết tại Trọng tài nước ngoài không?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-24ba71437a3919fc",
+        "score": 0.0325,
+        "page": 9,
+        "page_end": 10,
+        "chapter": "II",
+        "article": 13,
+        "hit": true,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-ef9489fe04774cc0",
+        "score": 0.0325,
+        "page": 10,
+        "page_end": 10,
+        "chapter": "II",
+        "article": 13,
+        "hit": false,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-4ddef9eacdad86fc",
+        "score": 0.0317,
+        "page": 4,
+        "page_end": 4,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-94dea8a9e1d73efe",
+        "score": 0.0293,
+        "page": 7,
+        "page_end": 7,
+        "chapter": "I",
+        "article": 8,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 13
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-6cdda124930c83b1",
+        "score": 0.0293,
+        "page": 32,
+        "page_end": 32,
+        "chapter": "VI",
+        "article": 44,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-0a9a8be259cae4c2",
+        "score": 0.0292,
+        "page": 2,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-30b81c76d49df66f",
+        "score": 0.0272,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 41,
+        "hit": false,
+        "component_ranks": {
+          "dense": 20,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.0271,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 10,
+          "bm25-bigram": 18
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-2ec8df55f0e7dd50",
+        "score": 0.0271,
+        "page": 7,
+        "page_end": 7,
+        "chapter": "I",
+        "article": 8,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 17
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-3951ca56707d19c3",
+        "score": 0.0269,
+        "page": 18,
+        "page_end": 18,
+        "chapter": "IV",
+        "article": 24,
+        "hit": false,
+        "component_ranks": {
+          "dense": 13,
+          "bm25-bigram": 16
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-24ba71437a3919fc",
+      "B-ef9489fe04774cc0",
+      "B-4ddef9eacdad86fc"
+    ],
+    "context_chars": 2415,
+    "context_hit": true,
+    "latency_ms": 5.0,
+    "gold_pages": [
+      10
+    ]
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Kinh doanh dịch vụ đòi nợ có thuộc ngành, nghề cấm đầu tư kinh doanh không?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-598fa8ff504ec744",
+        "score": 0.0328,
+        "page": 5,
+        "page_end": 5,
+        "chapter": "I",
+        "article": 6,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-4679425b231441ae",
+        "score": 0.032,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 40,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-4b3d91c91ca1f93d",
+        "score": 0.0311,
+        "page": 5,
+        "page_end": 6,
+        "chapter": "I",
+        "article": 7,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-29908a1e79a5467f",
+        "score": 0.0308,
+        "page": 5,
+        "page_end": 5,
+        "chapter": "I",
+        "article": 6,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-7b895db1dad63922",
+        "score": 0.0302,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 10,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-8ccbf245085fb593",
+        "score": 0.0301,
+        "page": 3,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-0d831dd4fbfc1eb9",
+        "score": 0.0294,
+        "page": 4,
+        "page_end": 5,
+        "chapter": "I",
+        "article": 5,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-30b81c76d49df66f",
+        "score": 0.0289,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 41,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 14
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-d8a5bccd9b85e5e3",
+        "score": 0.0288,
+        "page": 6,
+        "page_end": 7,
+        "chapter": "I",
+        "article": 7,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-94dea8a9e1d73efe",
+        "score": 0.0283,
+        "page": 7,
+        "page_end": 7,
+        "chapter": "I",
+        "article": 8,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 19
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-598fa8ff504ec744",
+      "B-4679425b231441ae",
+      "B-4b3d91c91ca1f93d"
+    ],
+    "context_chars": 2451,
+    "context_hit": true,
+    "latency_ms": 5.8,
+    "gold_pages": [
+      5
+    ]
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Cơ quan nào lập ra Quỹ Hỗ trợ đầu tư và quỹ này nhằm mục đích gì?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-97c34c9fccf0514f",
+        "score": 0.0328,
+        "page": 13,
+        "page_end": 13,
+        "chapter": "III",
+        "article": 16,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-e8af3690969ac2df",
+        "score": 0.032,
+        "page": 11,
+        "page_end": 11,
+        "chapter": "III",
+        "article": 14,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-2729b0b8577424ce",
+        "score": 0.0308,
+        "page": 13,
+        "page_end": 13,
+        "chapter": "III",
+        "article": 17,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-749c448638f72173",
+        "score": 0.0303,
+        "page": 33,
+        "page_end": 33,
+        "chapter": "VI",
+        "article": 44,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-80d4c95526877c7c",
+        "score": 0.0296,
+        "page": 37,
+        "page_end": 38,
+        "chapter": "VI",
+        "article": 49,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 13
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-04a63a3ffbc548e9",
+        "score": 0.0293,
+        "page": 13,
+        "page_end": 14,
+        "chapter": "III",
+        "article": 17,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-176ed7ca2416e097",
+        "score": 0.0292,
+        "page": 10,
+        "page_end": 10,
+        "chapter": "III",
+        "article": 14,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-9e8417206087b503",
+        "score": 0.0283,
+        "page": 23,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 30,
+        "hit": false,
+        "component_ranks": {
+          "dense": 19,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-22a114fa9d26e013",
+        "score": 0.0283,
+        "page": 2,
+        "page_end": 2,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-6c5bd0eab0869c36",
+        "score": 0.0283,
+        "page": 38,
+        "page_end": 38,
+        "chapter": "VII",
+        "article": 50,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 15
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-97c34c9fccf0514f",
+      "B-e8af3690969ac2df",
+      "B-2729b0b8577424ce"
+    ],
+    "context_chars": 2867,
+    "context_hit": true,
+    "latency_ms": 4.3,
+    "gold_pages": [
+      13
+    ]
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Có những hình thức đầu tư nào?",
+    "filter": {
+      "chapter": "IV"
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-9462dc6128622f7a",
+        "score": 0.0328,
+        "page": 14,
+        "page_end": 14,
+        "chapter": "IV",
+        "article": 18,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-93781a19d12412a9",
+        "score": 0.032,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 21,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-2a38b8fa7e90b581",
+        "score": 0.0318,
+        "page": 15,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 21,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.031,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-ab5a5a7a520af026",
+        "score": 0.031,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 22,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-ee1e89ea371943d8",
+        "score": 0.0301,
+        "page": 20,
+        "page_end": 21,
+        "chapter": "IV",
+        "article": 26,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-ea1e0977de0c98c6",
+        "score": 0.0296,
+        "page": 17,
+        "page_end": 17,
+        "chapter": "IV",
+        "article": 23,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-18c9cf4e3eecda7f",
+        "score": 0.0296,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 21,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-8bea3b8870055fc2",
+        "score": 0.0284,
+        "page": 24,
+        "page_end": 25,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-d809ebe15fe79a20",
+        "score": 0.0284,
+        "page": 14,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 19,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 10
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-9462dc6128622f7a",
+      "B-93781a19d12412a9",
+      "B-2a38b8fa7e90b581"
+    ],
+    "context_chars": 1387,
+    "context_hit": true,
+    "latency_ms": 3.2,
+    "gold_pages": [
+      14
+    ]
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Những ngành, nghề nào thuộc diện đầu tư có điều kiện?",
+    "filter": {
+      "chapter": "V"
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-30b81c76d49df66f",
+        "score": 0.0328,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 41,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-4679425b231441ae",
+        "score": 0.032,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 40,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-e3ea25c94810b7be",
+        "score": 0.0318,
+        "page": 30,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-67bca7e9097c9c87",
+        "score": 0.0315,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-1887fa9bc4904616",
+        "score": 0.0305,
+        "page": 29,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 39,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-4941169e3efd28f4",
+        "score": 0.0303,
+        "page": 29,
+        "page_end": 29,
+        "chapter": "V",
+        "article": 38,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-f79f725070650181",
+        "score": 0.0301,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 43,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 7
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-30b81c76d49df66f",
+      "B-4679425b231441ae",
+      "B-e3ea25c94810b7be"
+    ],
+    "context_chars": 2028,
+    "context_hit": true,
+    "latency_ms": 2.6,
+    "gold_pages": [
+      30
+    ]
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Hợp đồng BCC ký giữa các nhà đầu tư trong nước được thực hiện theo quy định nào?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-ab5a5a7a520af026",
+        "score": 0.0328,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 22,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-19128a8b6b25c365",
+        "score": 0.032,
+        "page": 29,
+        "page_end": 29,
+        "chapter": "IV",
+        "article": 37,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-22a114fa9d26e013",
+        "score": 0.032,
+        "page": 2,
+        "page_end": 2,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-9462dc6128622f7a",
+        "score": 0.0308,
+        "page": 14,
+        "page_end": 14,
+        "chapter": "IV",
+        "article": 18,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.0308,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-4ddef9eacdad86fc",
+        "score": 0.0299,
+        "page": 4,
+        "page_end": 4,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-9232a521c8d8a0bc",
+        "score": 0.0292,
+        "page": 3,
+        "page_end": 4,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-7b895db1dad63922",
+        "score": 0.0288,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-ee1e89ea371943d8",
+        "score": 0.0286,
+        "page": 20,
+        "page_end": 21,
+        "chapter": "IV",
+        "article": 26,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 13
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-8ccbf245085fb593",
+        "score": 0.028,
+        "page": 3,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 14
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-ab5a5a7a520af026",
+      "B-19128a8b6b25c365",
+      "B-22a114fa9d26e013"
+    ],
+    "context_chars": 2842,
+    "context_hit": true,
+    "latency_ms": 4.6,
+    "gold_pages": [
+      16
+    ]
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nếu hợp đồng BCC có nhà đầu tư nước ngoài tham gia thì phải làm thủ tục gì?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-ab5a5a7a520af026",
+        "score": 0.0328,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 22,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-19128a8b6b25c365",
+        "score": 0.0323,
+        "page": 29,
+        "page_end": 29,
+        "chapter": "IV",
+        "article": 37,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.0317,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-22a114fa9d26e013",
+        "score": 0.0306,
+        "page": 2,
+        "page_end": 2,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-4ddef9eacdad86fc",
+        "score": 0.0306,
+        "page": 4,
+        "page_end": 4,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-18c9cf4e3eecda7f",
+        "score": 0.0292,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 21,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-2206fc7e96147f6d",
+        "score": 0.0291,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 13,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-9462dc6128622f7a",
+        "score": 0.0291,
+        "page": 14,
+        "page_end": 14,
+        "chapter": "IV",
+        "article": 18,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 13
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-1383436087665cca",
+        "score": 0.0284,
+        "page": 42,
+        "page_end": 42,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 10
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-1887fa9bc4904616",
+        "score": 0.028,
+        "page": 29,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 39,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 8
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-ab5a5a7a520af026",
+      "B-19128a8b6b25c365",
+      "B-5c7f4add003ca5ff"
+    ],
+    "context_chars": 2878,
+    "context_hit": true,
+    "latency_ms": 4.4,
+    "gold_pages": [
+      16
+    ]
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Loại hợp đồng nào cho phép các nhà đầu tư hợp tác kinh doanh, chia lợi nhuận mà không phải lập tổ chức kinh tế?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-22a114fa9d26e013",
+        "score": 0.0325,
+        "page": 2,
+        "page_end": 2,
+        "chapter": "I",
+        "article": 3,
+        "hit": true,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-ab5a5a7a520af026",
+        "score": 0.032,
+        "page": 16,
+        "page_end": 16,
+        "chapter": "IV",
+        "article": 22,
+        "hit": false,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-9462dc6128622f7a",
+        "score": 0.031,
+        "page": 14,
+        "page_end": 14,
+        "chapter": "IV",
+        "article": 18,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-8bea3b8870055fc2",
+        "score": 0.0306,
+        "page": 24,
+        "page_end": 25,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-0a9a8be259cae4c2",
+        "score": 0.0305,
+        "page": 2,
+        "page_end": 3,
+        "chapter": "I",
+        "article": 3,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-1887fa9bc4904616",
+        "score": 0.0297,
+        "page": 29,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 39,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 10
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-5c7f4add003ca5ff",
+        "score": 0.0292,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-2206fc7e96147f6d",
+        "score": 0.0289,
+        "page": 15,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 20,
+        "hit": false,
+        "component_ranks": {
+          "dense": 17,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-d809ebe15fe79a20",
+        "score": 0.0288,
+        "page": 14,
+        "page_end": 15,
+        "chapter": "IV",
+        "article": 19,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-4ddef9eacdad86fc",
+        "score": 0.0272,
+        "page": 4,
+        "page_end": 4,
+        "chapter": "I",
+        "article": 4,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 16
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-22a114fa9d26e013",
+      "B-ab5a5a7a520af026",
+      "B-9462dc6128622f7a"
+    ],
+    "context_chars": 2309,
+    "context_hit": true,
+    "latency_ms": 4.2,
+    "gold_pages": [
+      2
+    ]
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Với dự án thuộc diện chấp thuận chủ trương đầu tư, việc chấp thuận phải được thực hiện vào thời điểm nào?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-47d122394db119d3",
+        "score": 0.0325,
+        "page": 22,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 29,
+        "hit": true,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-fa323f0166f551a9",
+        "score": 0.0325,
+        "page": 40,
+        "page_end": 40,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-31bc316124419bb5",
+        "score": 0.0301,
+        "page": 25,
+        "page_end": 25,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-4ff75df34ef38d4a",
+        "score": 0.0296,
+        "page": 25,
+        "page_end": 26,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 9
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-daa0542b6c8d0a3b",
+        "score": 0.0296,
+        "page": 40,
+        "page_end": 40,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-3951ca56707d19c3",
+        "score": 0.0295,
+        "page": 18,
+        "page_end": 18,
+        "chapter": "IV",
+        "article": 24,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-2121608c321e796c",
+        "score": 0.0291,
+        "page": 20,
+        "page_end": 20,
+        "chapter": "IV",
+        "article": 25,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 14
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-65a511d8b8c1ea11",
+        "score": 0.0289,
+        "page": 20,
+        "page_end": 20,
+        "chapter": "IV",
+        "article": 25,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 17
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-517c8245bd5ac4e6",
+        "score": 0.0288,
+        "page": 19,
+        "page_end": 19,
+        "chapter": "IV",
+        "article": 24,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-ea1e0977de0c98c6",
+        "score": 0.0285,
+        "page": 17,
+        "page_end": 17,
+        "chapter": "IV",
+        "article": 23,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 6
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-47d122394db119d3",
+      "B-fa323f0166f551a9",
+      "B-31bc316124419bb5"
+    ],
+    "context_chars": 2846,
+    "context_hit": true,
+    "latency_ms": 4.5,
+    "gold_pages": [
+      22
+    ]
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nhà đầu tư trúng đấu giá quyền sử dụng đất có phải ký quỹ bảo đảm thực hiện dự án không?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-9e8417206087b503",
+        "score": 0.0328,
+        "page": 23,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 30,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-7b895db1dad63922",
+        "score": 0.0318,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-90364b84b73a9150",
+        "score": 0.0315,
+        "page": 17,
+        "page_end": 17,
+        "chapter": "IV",
+        "article": 23,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-ea1e0977de0c98c6",
+        "score": 0.0313,
+        "page": 17,
+        "page_end": 17,
+        "chapter": "IV",
+        "article": 23,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-daa0542b6c8d0a3b",
+        "score": 0.0304,
+        "page": 40,
+        "page_end": 40,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 10,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-155c2cdb1a5fbbe3",
+        "score": 0.0294,
+        "page": 40,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 10
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-d4340505f6e7f329",
+        "score": 0.0292,
+        "page": 28,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 9,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-3951ca56707d19c3",
+        "score": 0.0287,
+        "page": 18,
+        "page_end": 18,
+        "chapter": "IV",
+        "article": 24,
+        "hit": false,
+        "component_ranks": {
+          "dense": 14,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-92161db2423c22c7",
+        "score": 0.0286,
+        "page": 18,
+        "page_end": 19,
+        "chapter": "IV",
+        "article": 24,
+        "hit": false,
+        "component_ranks": {
+          "dense": 13,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-fced6d927e32f5bf",
+        "score": 0.0272,
+        "page": 41,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 12,
+          "bm25-bigram": 15
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-9e8417206087b503",
+      "B-7b895db1dad63922"
+    ],
+    "context_chars": 2239,
+    "context_hit": true,
+    "latency_ms": 6.3,
+    "gold_pages": [
+      23
+    ]
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Khi dự án phải ngừng hoạt động vì bất khả kháng, nhà đầu tư được Nhà nước hỗ trợ gì về đất?",
+    "filter": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-ec40f8d841582794",
+        "score": 0.0328,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": true,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-d4340505f6e7f329",
+        "score": 0.0317,
+        "page": 28,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-90364b84b73a9150",
+        "score": 0.0312,
+        "page": 17,
+        "page_end": 17,
+        "chapter": "IV",
+        "article": 23,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-74be6ac4f631b6d2",
+        "score": 0.0308,
+        "page": 25,
+        "page_end": 25,
+        "chapter": "IV",
+        "article": 33,
+        "hit": false,
+        "component_ranks": {
+          "dense": 8,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-f15035f21c9fb383",
+        "score": 0.0308,
+        "page": 28,
+        "page_end": 29,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 8
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-9e8417206087b503",
+        "score": 0.0303,
+        "page": 23,
+        "page_end": 23,
+        "chapter": "IV",
+        "article": 30,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 6
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-155c2cdb1a5fbbe3",
+        "score": 0.0285,
+        "page": 40,
+        "page_end": 41,
+        "chapter": "VII",
+        "article": 52,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 16
+        }
+      },
+      {
+        "rank": 8,
+        "id": "B-1713e4a67c61718a",
+        "score": 0.0283,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false,
+        "component_ranks": {
+          "dense": 15,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 9,
+        "id": "B-2b7d8deec90172dc",
+        "score": 0.028,
+        "page": 27,
+        "page_end": 28,
+        "chapter": "IV",
+        "article": 36,
+        "hit": false,
+        "component_ranks": {
+          "dense": 11,
+          "bm25-bigram": 12
+        }
+      },
+      {
+        "rank": 10,
+        "id": "B-77ed886349b73469",
+        "score": 0.0272,
+        "page": 27,
+        "page_end": 27,
+        "chapter": "IV",
+        "article": 35,
+        "hit": false,
+        "component_ranks": {
+          "dense": 13,
+          "bm25-bigram": 14
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-ec40f8d841582794",
+      "B-d4340505f6e7f329",
+      "B-90364b84b73a9150"
+    ],
+    "context_chars": 2773,
+    "context_hit": true,
+    "latency_ms": 4.4,
+    "gold_pages": [
+      27
+    ]
+  },
+  {
+    "query_id": "q16",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Nhà đầu tư phải tuân thủ những quy định nào khi thực hiện hoạt động đầu tư?",
+    "filter": {
+      "chapter": "V"
+    },
+    "results": [
+      {
+        "rank": 1,
+        "id": "B-4941169e3efd28f4",
+        "score": 0.0325,
+        "page": 29,
+        "page_end": 29,
+        "chapter": "V",
+        "article": 38,
+        "hit": true,
+        "component_ranks": {
+          "dense": 2,
+          "bm25-bigram": 1
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B-f79f725070650181",
+        "score": 0.0323,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 43,
+        "hit": false,
+        "component_ranks": {
+          "dense": 1,
+          "bm25-bigram": 3
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B-1887fa9bc4904616",
+        "score": 0.032,
+        "page": 29,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 39,
+        "hit": false,
+        "component_ranks": {
+          "dense": 3,
+          "bm25-bigram": 2
+        }
+      },
+      {
+        "rank": 4,
+        "id": "B-e3ea25c94810b7be",
+        "score": 0.0308,
+        "page": 30,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false,
+        "component_ranks": {
+          "dense": 5,
+          "bm25-bigram": 5
+        }
+      },
+      {
+        "rank": 5,
+        "id": "B-4679425b231441ae",
+        "score": 0.0306,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 40,
+        "hit": false,
+        "component_ranks": {
+          "dense": 4,
+          "bm25-bigram": 7
+        }
+      },
+      {
+        "rank": 6,
+        "id": "B-67bca7e9097c9c87",
+        "score": 0.0306,
+        "page": 31,
+        "page_end": 31,
+        "chapter": "V",
+        "article": 42,
+        "hit": false,
+        "component_ranks": {
+          "dense": 7,
+          "bm25-bigram": 4
+        }
+      },
+      {
+        "rank": 7,
+        "id": "B-30b81c76d49df66f",
+        "score": 0.0303,
+        "page": 30,
+        "page_end": 30,
+        "chapter": "V",
+        "article": 41,
+        "hit": false,
+        "component_ranks": {
+          "dense": 6,
+          "bm25-bigram": 6
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "hit10": true,
+    "context_ids": [
+      "B-4941169e3efd28f4",
+      "B-f79f725070650181",
+      "B-1887fa9bc4904616"
+    ],
+    "context_chars": 1839,
+    "context_hit": true,
+    "latency_ms": 2.7,
+    "gold_pages": [
+      29
+    ]
+  }
+]

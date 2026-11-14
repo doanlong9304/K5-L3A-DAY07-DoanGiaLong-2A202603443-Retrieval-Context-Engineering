@@ -1,0 +1,182 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'tối đa 70 năm' (Điều 31 k1); ý thời gian chậm, điều chỉnh, gia hạn, 2 trường hợp không gia hạn (k3-k6) và so sánh 50/70 năm (k2) khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'tối đa 50 năm', đủ 4 trường hợp được tới 70 năm (Điều 31 k2); k3-k5 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'Không' (Điều 9 k1); trưng mua, trưng dụng (k2) khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng điều kiện nghĩa vụ tài chính (Điều 11) và 3 loại tài sản; ý đầu tư ra nước ngoài (Điều 43, Điều 42 k3a-c) nói rõ là trường hợp khác, nội dung khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'Có', đủ 5 cơ quan/tổ chức (Điều 13 k3); k1 và k4 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng điểm h k1 Điều 6; Điều 40 k1 và Điều 6 k3 (Chính phủ rà soát, trình Quốc hội, B-2990) khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng cơ quan và đủ 3 mục đích (Điều 16 k1); k2 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đủ 5 hình thức (Điều 18); Điều 21 k1, k2, k4 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Theo filter Chương V: đủ 5 ngành Điều 41 k1; nói rõ không tìm thấy danh mục trong nước, không bịa; Điều 41 k2, Điều 42 k3a khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng: pháp luật về dân sự và pháp luật có liên quan (Điều 22 k1); Điều 3 k14 và Điều 22 k2-k5 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng: thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo Điều 26 (Điều 22 k2); Điều 26 k5, Điều 37 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng: hợp đồng BCC (Điều 3 k14); Điều 22 k1-k5 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [],
+    "answer_grade": 0,
+    "reason": "Từ chối câu có đáp án -> 0. Ba truy vấn của agent ('thời điểm chấp thuận…', '…trước khi giao đất…', 'Điều 24…') đều không đưa Điều 29 vào top-3 (hạng 6-9 ở cả dense, BM25, hybrid); lỗi do cách viết truy vấn + xếp hạng, không phải do ghép context.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'Không' (Điều 30 k1 điểm a); các trường hợp miễn khác và k2 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng: miễn tiền thuê đất, giảm tiền sử dụng đất trong thời gian ngừng (Điều 35 k1); ý thông báo bằng văn bản khớp; nói rõ không có mức giảm cụ thể.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đủ 4 nguồn phải tuân thủ và tự chịu trách nhiệm (Điều 38 k2) theo phạm vi Chương V; Điều 40, 41, 42 k3 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "u01",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "2 truy vấn rồi từ chối; không đưa con số. Lý do có đoán 'có thể nằm trong văn bản khác' nhưng nói rõ không xác minh được.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "u02",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "3 truy vấn rồi từ chối; không đưa mức phạt. Lý do dẫn Điều 33 k4 và Điều 35 k2 đ đúng văn bản.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "u03",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "2 truy vấn rồi từ chối; không đưa thuế suất. Lý do dẫn Điều 15 k2b, Điều 14 k1b, k6, k7 đúng văn bản.",
+    "reviewer": "Đoàn Gia Long"
+  }
+]

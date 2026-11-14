@@ -1,0 +1,375 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Thời hạn hoạt động tối đa của dự án đầu tư trong khu kinh tế là bao lâu?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Theo Luật Đầu tư 143/2025/QH15, thời hạn hoạt động của dự án đầu tư trong khu kinh tế là **tối đa 70 năm** [B-0288b0e0f7ba0af3].\n\nMột số quy định liên quan:\n- **Thời gian chậm không bị tính:** Nếu tiến độ hoặc thời hạn hoạt động bị ảnh hưởng trong các trường hợp nêu tại các điểm a, b, c, d và g khoản 4 Điều 33, thì khoảng thời gian bị chậm không tính vào thời hạn hoạt động và tiến độ của dự án [B-0288b0e0f7ba0af3].\n- **Điều chỉnh thời hạn:** Trong quá trình thực hiện, nhà đầu tư được tăng hoặc giảm thời hạn hoạt động. Thời hạn sau khi điều chỉnh vẫn không được vượt quá 70 năm [B-e7304ebd3af27c91].\n- **Gia hạn khi hết hạn:** Nếu nhà đầu tư muốn tiếp tục dự án và đáp ứng điều kiện theo quy định của pháp luật, dự án được xem xét gia hạn. Mỗi lần gia hạn tối đa không quá 70 năm [B-e7304ebd3af27c91].\n- **Trường hợp không được gia hạn:** (a) dự án dùng công nghệ lạc hậu, có nguy cơ gây ô nhiễm môi trường hoặc thâm dụng tài nguyên; (b) dự án mà nhà đầu tư phải chuyển giao tài sản không bồi hoàn cho Nhà nước Việt Nam hoặc bên Việt Nam [B-e7304ebd3af27c91].\n- Chính phủ sẽ quy định chi tiết Điều 31 [B-e7304ebd3af27c91].",
+    "citations": [
+      "B-0288b0e0f7ba0af3",
+      "B-e7304ebd3af27c91"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "thời hạn hoạt động của dự án đầu tư trong khu kinh tế",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-0288b0e0f7ba0af3",
+            "page": 23,
+            "article": 31,
+            "score": 0.8162
+          },
+          {
+            "id": "B-e7304ebd3af27c91",
+            "page": 24,
+            "article": 31,
+            "score": 0.7449
+          },
+          {
+            "id": "B-fced6d927e32f5bf",
+            "page": 41,
+            "article": 52,
+            "score": 0.7116
+          }
+        ],
+        "context_ids": [
+          "B-0288b0e0f7ba0af3",
+          "B-e7304ebd3af27c91"
+        ],
+        "context_chars": 2020
+      },
+      {
+        "event": "answer",
+        "answer": "Theo Luật Đầu tư 143/2025/QH15, thời hạn hoạt động của dự án đầu tư trong khu kinh tế là **tối đa 70 năm** [B-0288b0e0f7ba0af3].\n\nMột số quy định liên quan:\n- **Thời gian chậm không bị tính:** Nếu tiến độ hoặc thời hạn hoạt động bị ảnh hưởng trong các trường hợp nêu tại các điểm a, b, c, d và g khoản 4 Điều 33, thì khoảng thời gian bị chậm không tính vào thời hạn hoạt động và tiến độ của dự án [B-0288b0e0f7ba0af3].\n- **Điều chỉnh thời hạn:** Trong quá trình thực hiện, nhà đầu tư được tăng hoặc giảm thời hạn hoạt động. Thời hạn sau khi điều chỉnh vẫn không được vượt quá 70 năm [B-e7304ebd3af27c91].\n- **Gia hạn khi hết hạn:** Nếu nhà đầu tư muốn tiếp tục dự án và đáp ứng điều kiện theo quy định của pháp luật, dự án được xem xét gia hạn. Mỗi lần gia hạn tối đa không quá 70 năm [B-e7304ebd3af27c91].\n- **Trường hợp không được gia hạn:** (a) dự án dùng công nghệ lạc hậu, có nguy cơ gây ô nhiễm môi trường hoặc thâm dụng tài nguyên; (b) dự án mà nhà đầu tư phải chuyển giao tài sản không bồi hoàn cho Nhà nước Việt Nam hoặc bên Việt Nam [B-e7304ebd3af27c91].\n- Chính phủ sẽ quy định chi tiết Điều 31 [B-e7304ebd3af27c91].",
+        "citations": [
+          "B-0288b0e0f7ba0af3",
+          "B-e7304ebd3af27c91"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "thời hạn hoạt động của dự án đầu tư trong khu kinh tế"
+    ],
+    "final_context": "[B-0288b0e0f7ba0af3] (nguồn: data/raw/luat143-2025.pdf | trang 23 | Điều 31)\nĐiều 31. Thời hạn hoạt động, tiến độ thực hiện của dự án đầu tư\n1. Thời hạn hoạt động của dự án đầu tư trong khu kinh tế không quá 70 năm.\n2. Thời hạn hoạt động của dự án đầu tư ngoài khu kinh tế không quá 50 năm.\nDự án đầu tư thực hiện tại địa bàn có điều kiện kinh tế - xã hội khó khăn, địa bàn\ncó điều kiện kinh tế - xã hội đặc biệt khó khăn hoặc dự án đầu tư có vốn đầu tư lớn\nnhưng thu hồi vốn chậm; dự án đầu tư xây dựng và kinh doanh kết cấu hạ tầng khu\ncông nghệ cao, khu công nghiệp công nghệ cao, khu công nghệ số tập trung; dự án\nthuộc diện ưu đãi, hỗ trợ đầu tư đặc biệt quy định tại khoản 2 Điều 17 của Luật này\nthì thời hạn hoạt động của dự án đầu tư có thể dài hơn nhưng không quá 70 năm.\n3. Trường hợp tiến độ, thời hạn hoạt động của dự án bị ảnh hưởng trong các\ntrường hợp quy định tại các khoản a, b, c, d và g khoản 4 Điều 33 của Luật này thì\nthời gian bị chậm đó không tính vào thời hạn hoạt động, tiến độ thực hiện của dự\nán đầu tư.\n\n[B-e7304ebd3af27c91] (nguồn: data/raw/luat143-2025.pdf | trang 24 | Điều 31)\nĐiều 31. Thời hạn hoạt động, tiến độ thực hiện của dự án đầu tư (tiếp)\n4. Trong quá trình thực hiện dự án đầu tư, nhà đầu tư được điều chỉnh tăng\nhoặc giảm thời hạn hoạt động của dự án đầu tư. Thời hạn hoạt động của dự án đầu\ntư sau khi điều chỉnh không được vượt quá thời hạn quy định tại khoản 1 và khoản\n2 Điều này.\n5. Khi hết thời hạn hoạt động của dự án đầu tư mà nhà đầu tư có nhu cầu\ntiếp tục thực hiện dự án đầu tư và đáp ứng điều kiện theo quy định của pháp luật\nthì được xem xét gia hạn thời hạn hoạt động, trừ các dự án đầu tư sau đây:\na) Dự án đầu tư sử dụng công nghệ lạc hậu, tiềm ẩn nguy cơ gây ô nhiễm\nmôi trường, thâm dụng tài nguyên;\nb) Dự án đầu tư thuộc trường hợp nhà đầu tư phải chuyển giao không bồi\nhoàn tài sản cho Nhà nước Việt Nam hoặc bên Việt Nam.\nThời gian mỗi lần gia hạn tối đa không quá thời hạn quy định tại khoản 1 và\nkhoản 2 Điều này.\n6. Chính phủ quy định chi tiết Điều này.",
+    "final_context_ids": [
+      "B-0288b0e0f7ba0af3",
+      "B-e7304ebd3af27c91"
+    ],
+    "n_searches": 1,
+    "usage": {
+      "llm_calls": 2,
+      "llm_retries": 0,
+      "input_tokens": 4078,
+      "output_tokens": 827,
+      "thinking_tokens": 0,
+      "llm_seconds": 12.55,
+      "retrieval_seconds": 0.583,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 13.13
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "Những ngành, nghề nào thuộc diện đầu tư có điều kiện?",
+    "filter": {
+      "chapter": "V"
+    },
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Tài liệu tôi tìm được chưa có danh mục chung các ngành, nghề đầu tư kinh doanh có điều kiện ở trong nước (thường nằm ở Điều 7 và Phụ lục của Luật). Vì vậy tôi chưa trả lời được phần này.\n\nTài liệu chỉ có quy định về **ngành, nghề đầu tư ra nước ngoài có điều kiện** tại Điều 41. Gồm 5 ngành, nghề [B-30b81c76d49df66f]:\n- Ngân hàng;\n- Bảo hiểm;\n- Chứng khoán;\n- Báo chí, phát thanh, truyền hình;\n- Kinh doanh bất động sản.\n\nĐiều kiện đầu tư ra nước ngoài trong các ngành, nghề này do các văn bản sau quy định: luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban Thường vụ Quốc hội, nghị định của Chính phủ và điều ước quốc tế về đầu tư mà Việt Nam là thành viên [B-30b81c76d49df66f].\n\nLưu ý: Dự án ra nước ngoài thuộc các ngành, nghề này thì không được hưởng ngoại lệ sau. Ngoại lệ đó là chỉ đăng ký giao dịch ngoại hối, không cần Giấy chứng nhận đăng ký đầu tư ra nước ngoài, khi vốn đầu tư nhỏ hơn mức Chính phủ quy định [B-67bca7e9097c9c87].",
+    "citations": [
+      "B-30b81c76d49df66f",
+      "B-67bca7e9097c9c87"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "ngành, nghề đầu tư kinh doanh có điều kiện",
+        "filter": {
+          "chapter": "V"
+        },
+        "results": [
+          {
+            "id": "B-30b81c76d49df66f",
+            "page": 30,
+            "article": 41,
+            "score": 0.7925
+          },
+          {
+            "id": "B-4679425b231441ae",
+            "page": 30,
+            "article": 40,
+            "score": 0.7589
+          },
+          {
+            "id": "B-67bca7e9097c9c87",
+            "page": 31,
+            "article": 42,
+            "score": 0.6791
+          }
+        ],
+        "context_ids": [
+          "B-30b81c76d49df66f",
+          "B-4679425b231441ae",
+          "B-67bca7e9097c9c87"
+        ],
+        "context_chars": 2156
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "danh mục ngành, nghề đầu tư kinh doanh có điều kiện Phụ lục Điều 7",
+        "filter": {
+          "chapter": "V"
+        },
+        "results": [
+          {
+            "id": "B-30b81c76d49df66f",
+            "page": 30,
+            "article": 41,
+            "score": 0.7405
+          },
+          {
+            "id": "B-4679425b231441ae",
+            "page": 30,
+            "article": 40,
+            "score": 0.7112
+          },
+          {
+            "id": "B-67bca7e9097c9c87",
+            "page": 31,
+            "article": 42,
+            "score": 0.6491
+          }
+        ],
+        "context_ids": [
+          "B-30b81c76d49df66f",
+          "B-4679425b231441ae",
+          "B-67bca7e9097c9c87"
+        ],
+        "context_chars": 2156
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "điều kiện đầu tư kinh doanh vì lý do quốc phòng, an ninh quốc gia, trật tự an toàn xã hội",
+        "filter": {
+          "chapter": "V"
+        },
+        "results": [
+          {
+            "id": "B-4679425b231441ae",
+            "page": 30,
+            "article": 40,
+            "score": 0.7113
+          },
+          {
+            "id": "B-67bca7e9097c9c87",
+            "page": 31,
+            "article": 42,
+            "score": 0.7063
+          },
+          {
+            "id": "B-30b81c76d49df66f",
+            "page": 30,
+            "article": 41,
+            "score": 0.6988
+          }
+        ],
+        "context_ids": [
+          "B-30b81c76d49df66f",
+          "B-4679425b231441ae",
+          "B-67bca7e9097c9c87"
+        ],
+        "context_chars": 2156
+      },
+      {
+        "event": "answer",
+        "answer": "Tài liệu tôi tìm được chưa có danh mục chung các ngành, nghề đầu tư kinh doanh có điều kiện ở trong nước (thường nằm ở Điều 7 và Phụ lục của Luật). Vì vậy tôi chưa trả lời được phần này.\n\nTài liệu chỉ có quy định về **ngành, nghề đầu tư ra nước ngoài có điều kiện** tại Điều 41. Gồm 5 ngành, nghề [B-30b81c76d49df66f]:\n- Ngân hàng;\n- Bảo hiểm;\n- Chứng khoán;\n- Báo chí, phát thanh, truyền hình;\n- Kinh doanh bất động sản.\n\nĐiều kiện đầu tư ra nước ngoài trong các ngành, nghề này do các văn bản sau quy định: luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban Thường vụ Quốc hội, nghị định của Chính phủ và điều ước quốc tế về đầu tư mà Việt Nam là thành viên [B-30b81c76d49df66f].\n\nLưu ý: Dự án ra nước ngoài thuộc các ngành, nghề này thì không được hưởng ngoại lệ sau. Ngoại lệ đó là chỉ đăng ký giao dịch ngoại hối, không cần Giấy chứng nhận đăng ký đầu tư ra nước ngoài, khi vốn đầu tư nhỏ hơn mức Chính phủ quy định [B-67bca7e9097c9c87].",
+        "citations": [
+          "B-30b81c76d49df66f",
+          "B-67bca7e9097c9c87"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "ngành, nghề đầu tư kinh doanh có điều kiện",
+      "danh mục ngành, nghề đầu tư kinh doanh có điều kiện Phụ lục Điều 7",
+      "điều kiện đầu tư kinh doanh vì lý do quốc phòng, an ninh quốc gia, trật tự an toàn xã hội"
+    ],
+    "final_context": "[B-30b81c76d49df66f] (nguồn: data/raw/luat143-2025.pdf | trang 30 | Điều 41)\nĐiều 41. Ngành, nghề đầu tư ra nước ngoài có điều kiện\n1. Ngành, nghề đầu tư ra nước ngoài có điều kiện bao gồm:\na) Ngân hàng;\nb) Bảo hiểm;\nc) Chứng khoán;\nd) Báo chí, phát thanh, truyền hình;\nđ) Kinh doanh bất động sản.\n2. Điều kiện đầu tư ra nước ngoài trong ngành, nghề quy định tại khoản 1\nĐiều này được quy định tại luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết\ncủa Ủy ban Thường vụ Quốc hội, nghị định của Chính phủ và điều ước quốc tế về\nđầu tư mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.\n\n[B-4679425b231441ae] (nguồn: data/raw/luat143-2025.pdf | trang 30 | Điều 40)\nĐiều 40. Ngành, nghề cấm đầu tư ra nước ngoài\n1. Ngành, nghề cấm đầu tư kinh doanh quy định tại Điều 6 của Luật này và\ncác điều ước quốc tế có liên quan mà nước Cộng hòa xã hội chủ nghĩa Việt Nam\nlà thành viên.\n2. Ngành, nghề có công nghệ, sản phẩm thuộc đối tượng cấm xuất khẩu theo\nquy định của pháp luật về quản lý ngoại thương.\n3. Ngành, nghề cấm đầu tư kinh doanh theo quy định của pháp luật nước\ntiếp nhận đầu tư.\n\n[B-67bca7e9097c9c87] (nguồn: data/raw/luat143-2025.pdf | trang 31 | Điều 42)\nĐiều 42. Cấp, điều chỉnh, chấm dứt hiệu lực của Giấy chứng nhận đăng (tiếp)\n3. Nhà đầu tư thực hiện thủ tục đăng ký giao dịch ngoại hối theo quy định\ncủa pháp luật về quản lý ngoại hối mà không phải thực hiện thủ tục cấp Giấy chứng\nnhận đăng ký đầu tư ra nước ngoài trong các trường hợp sau đây:\na) Dự án đầu tư ra nước ngoài có mức vốn đầu tư ra nước ngoài nhỏ hơn\nmức quy định của Chính phủ và không thuộc ngành, nghề đầu tư ra nước ngoài có\nđiều kiện theo quy định tại khoản 1 Điều 41 của Luật này;\nb) Dự án đầu tư ra nước ngoài gắn với quốc phòng, an ninh triển khai theo\nthỏa thuận giữa Chính phủ Việt Nam và Chính phủ các nước;\nc) Dự án đầu tư ra nước ngoài của các tập đoàn, tổng công ty nhà nước và tổ\nchức kinh tế khác theo quy định của Chính phủ.\n4. Chính phủ quy định chi tiết Điều này; quy định về điều kiện, hồ sơ, trình\ntự thủ tục cấp, điều chỉnh, chấm dứt hiệu lực của Giấy chứng nhận đăng ký đầu tư\nra nước ngoài và nội dung Giấy chứng nhận đăng ký đầu tư ra nước ngoài.",
+    "final_context_ids": [
+      "B-30b81c76d49df66f",
+      "B-4679425b231441ae",
+      "B-67bca7e9097c9c87"
+    ],
+    "n_searches": 3,
+    "usage": {
+      "llm_calls": 4,
+      "llm_retries": 0,
+      "input_tokens": 9697,
+      "output_tokens": 1363,
+      "thinking_tokens": 0,
+      "llm_seconds": 17.07,
+      "retrieval_seconds": 1.259,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 18.34
+  },
+  {
+    "query_id": "u01",
+    "split": "dev",
+    "question": "Lệ phí cấp Giấy chứng nhận đăng ký đầu tư là bao nhiêu tiền?",
+    "filter": null,
+    "model": "claude-opus-5-5",
+    "retriever": "dense",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "stop_reason": "model_abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "lệ phí cấp Giấy chứng nhận đăng ký đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-ee1e89ea371943d8",
+            "page": 20,
+            "article": 26,
+            "score": 0.7394
+          },
+          {
+            "id": "B-1456b3d32f36a55c",
+            "page": 21,
+            "article": 27,
+            "score": 0.7242
+          },
+          {
+            "id": "B-e3ea25c94810b7be",
+            "page": 30,
+            "article": 42,
+            "score": 0.7161
+          }
+        ],
+        "context_ids": [
+          "B-ee1e89ea371943d8",
+          "B-1456b3d32f36a55c",
+          "B-e3ea25c94810b7be"
+        ],
+        "context_chars": 2776
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "phí, lệ phí thực hiện thủ tục đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-cf4631607814cb1c",
+            "page": 21,
+            "article": 28,
+            "score": 0.6943
+          },
+          {
+            "id": "B-daa0542b6c8d0a3b",
+            "page": 40,
+            "article": 52,
+            "score": 0.6906
+          },
+          {
+            "id": "B-8fc93d45d7f10a65",
+            "page": 22,
+            "article": 28,
+            "score": 0.6882
+          }
+        ],
+        "context_ids": [
+          "B-ee1e89ea371943d8",
+          "B-1456b3d32f36a55c",
+          "B-e3ea25c94810b7be"
+        ],
+        "context_chars": 2776
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "mức thu lệ phí đăng ký đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-ee1e89ea371943d8",
+            "page": 20,
+            "article": 26,
+            "score": 0.6677
+          },
+          {
+            "id": "B-1456b3d32f36a55c",
+            "page": 21,
+            "article": 27,
+            "score": 0.6613
+          },
+          {
+            "id": "B-cf4631607814cb1c",
+            "page": 21,
+            "article": 28,
+            "score": 0.6578
+          }
+        ],
+        "context_ids": [
+          "B-ee1e89ea371943d8",
+          "B-1456b3d32f36a55c",
+          "B-e3ea25c94810b7be"
+        ],
+        "context_chars": 2776
+      },
+      {
+        "event": "abstain",
+        "reason": "Tôi không tìm thấy mức lệ phí cấp Giấy chứng nhận đăng ký đầu tư trong các đoạn Luật Đầu tư số 143/2025/QH15 đã tra được, nên không thể nêu con số. Đã thử ba truy vấn: lệ phí cấp Giấy chứng nhận, phí và lệ phí thực hiện thủ tục đầu tư, và mức thu lệ phí đăng ký đầu tư. Các đoạn tìm được chỉ nói về: dự án nào phải cấp Giấy chứng nhận đăng ký đầu tư (Điều 26); cơ quan có thẩm quyền cấp, điều chỉnh, thu hồi giấy này (Điều 27); và việc cấp Giấy chứng nhận đăng ký đầu tư ra nước ngoài (Điều 42). Điều 26 khoản 5 giao Chính phủ quy định điều kiện, hồ sơ, trình tự, thủ tục cấp giấy, nhưng không nhắc đến lệ phí."
+      }
+    ],
+    "queries": [
+      "lệ phí cấp Giấy chứng nhận đăng ký đầu tư",
+      "phí, lệ phí thực hiện thủ tục đầu tư",
+      "mức thu lệ phí đăng ký đầu tư"
+    ],
+    "final_context": "[B-ee1e89ea371943d8] (nguồn: data/raw/luat143-2025.pdf | trang 20-21 | Điều 26)\nĐiều 26. Dự án thuộc diện cấp Giấy chứng nhận đăng ký đầu tư\n1. Các dự án phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư\nbao gồm:\na) Dự án đầu tư của nhà đầu tư nước ngoài;\nb) Dự án đầu tư của tổ chức kinh tế quy định tại khoản 1 Điều 20 của Luật này.\n2. Các dự án không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu\ntư bao gồm:\na) Dự án đầu tư của nhà đầu tư trong nước;\nb) Dự án đầu tư của tổ chức kinh tế quy định tại khoản 2 Điều 20 của Luật này;\nc) Đầu tư theo hình thức góp vốn, mua cổ phần, mua phần vốn góp của tổ\nchức kinh tế.\n3. Đối với dự án đầu tư quy định tại Điều 24 của Luật này, nhà đầu tư trong\nnước, tổ chức kinh tế quy định tại khoản 2 Điều 20 của Luật này triển khai thực\nhiện dự án đầu tư sau khi được chấp thuận chủ trương đầu tư.\n4. Trường hợp nhà đầu tư có nhu cầu cấp Giấy chứng nhận đăng ký đầu tư\nđối với dự án đầu tư quy định tại điểm a và điểm b khoản 2 Điều này, nhà đầu tư\nthực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư.\n5. Chính phủ quy định về điều kiện, hồ sơ, trình tự, thủ tục cấp, điều chỉnh\nvà nội dung Giấy chứng nhận đăng ký đầu tư.\n\n[B-1456b3d32f36a55c] (nguồn: data/raw/luat143-2025.pdf | trang 21 | Điều 27)\nĐiều 27. Thẩm quyền cấp, điều chỉnh và thu hồi Giấy chứng nhận đăng\nký đầu tư\n1. Ban quản lý khu công nghiệp, khu chế xuất, khu công nghệ cao, khu kinh\ntế cấp, điều chỉnh, thu hồi Giấy chứng nhận đăng ký đầu tư đối với dự án đầu tư\ntrong khu công nghiệp, khu chế xuất, khu công nghệ cao, khu công nghệ số tập\ntrung, khu kinh tế, trừ trường hợp quy định tại khoản 3 Điều này.\n2. Sở Tài chính cấp, điều chỉnh, thu hồi Giấy chứng nhận đăng ký đầu tư đối\nvới dự án đầu tư ngoài khu công nghiệp, khu chế xuất, khu công nghệ cao, khu\nkinh tế, trừ trường hợp quy định tại khoản 3 Điều này.\n\n[B-e3ea25c94810b7be] (nguồn: data/raw/luat143-2025.pdf | trang 30-31 | Điều 42)\nĐiều 42. Cấp, điều chỉnh, chấm dứt hiệu lực của Giấy chứng nhận đăng\nký đầu tư ra nước ngoài\n1. Bộ Tài chính cấp, điều chỉnh, chấm dứt hiệu lực của Giấy chứng nhận\nđăng ký đầu tư ra nước ngoài đối với các dự án có mức vốn đầu tư ra nước ngoài\ntheo quy định của Chính phủ hoặc dự án đầu tư có lĩnh vực thuộc ngành, nghề đầu\ntư ra nước ngoài có điều kiện quy định tại khoản 1 Điều 41 của Luật này. Trong\ntrường hợp cần thiết, Bộ Tài chính phân cấp thẩm quyền cấp, điều chỉnh, chấm dứt\nhiệu lực Giấy chứng nhận đăng ký đầu tư ra nước ngoài cho tổ chức thuộc Bộ.\n2. Đối với dự án đầu tư ra nước ngoài có quy mô vốn lớn hoặc dự án đề xuất\náp dụng cơ chế chính sách hỗ trợ đặc biệt, Bộ Tài chính báo cáo Thủ tướng Chính\nphủ xem xét, chấp thuận trước khi cấp, điều chỉnh Giấy chứng nhận đăng ký đầu\ntư ra nước ngoài, trừ trường hợp quy định tại khoản 3 Điều này.",
+    "final_context_ids": [
+      "B-ee1e89ea371943d8",
+      "B-1456b3d32f36a55c",
+      "B-e3ea25c94810b7be"
+    ],
+    "n_searches": 3,
+    "usage": {
+      "llm_calls": 4,
+      "llm_retries": 0,
+      "input_tokens": 10945,
+      "output_tokens": 822,
+      "thinking_tokens": 0,
+      "llm_seconds": 14.94,
+      "retrieval_seconds": 1.061,
+      "served_models": [
+        "claude-opus-5-5"
+      ]
+    },
+    "seconds": 16.0
+  }
+]

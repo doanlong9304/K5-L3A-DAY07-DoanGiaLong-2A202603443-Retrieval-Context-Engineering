@@ -1,0 +1,69 @@
+[
+  {
+    "query_id": "t01",
+    "citation_support": [],
+    "answer_grade": 0,
+    "reason": "Từ chối câu có đáp án -> 0. Evidence gold (Điều 40, chương V) có trong context ngay lượt 1 (hạng 1), nhưng model hiểu câu hỏi là Điều 6 (cấm đầu tư kinh doanh nói chung) nên tìm thêm 2 lượt rồi từ chối; lý do từ chối có nêu đúng 3 ý của Điều 40. Lỗi do diễn giải câu hỏi mơ hồ, không do retrieval/ghép context.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "t02",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'nhà đầu tư nước ngoài' (Điều 3 k19); ý phân biệt các loại nhà đầu tư (k18, k20-22) và điều kiện thành lập tổ chức kinh tế (Điều 19 k2) khớp nguồn.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "t03",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng '24 tháng' (Điều 36 k2 điểm b); điều kiện và ngoại lệ điểm đ (thu hồi đất, B-d434) khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "t04",
+    "citation_support": [
+      true,
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 'định kỳ 06 tháng và hằng năm', gửi Bộ Tài chính, NHNN, Cơ quan đại diện VN tại nước tiếp nhận (Điều 48); các nghĩa vụ báo cáo khác khớp nguồn.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "t05",
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "reason": "Đúng 01/3/2026 (Điều 51); 2 ngoại lệ (01/7/2026, 01/01/2026) và hiệu lực Luật 2020 khớp.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "u04",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "3 truy vấn rồi từ chối; không đưa số ngày, nêu khoản 5 Điều 26 giao Chính phủ quy định.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "u05",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "2 truy vấn rồi từ chối; không đưa tỷ lệ %, chỉ nêu phạm vi Điều 30 có nguồn.",
+    "reviewer": "Đoàn Gia Long"
+  },
+  {
+    "query_id": "u06",
+    "citation_support": [],
+    "abstention_correct": true,
+    "reason": "2 truy vấn rồi từ chối; không đưa con số lương, nói rõ thuộc pháp luật lao động.",
+    "reviewer": "Đoàn Gia Long"
+  }
+]

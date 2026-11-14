@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 7 Agentic RAG</title>
+<style>
+:root{
+  --bg:#f7f7f4; --surface:#ffffff; --ink:#1d1f23; --muted:#5d6370; --line:#dfe1e6;
+  --accent:#2f5bd3; --accent-soft:#e8eefc; --good:#1f7a4d; --good-soft:#e3f4ea;
+  --bad:#b3261e; --bad-soft:#fbe9e7; --warn:#8a5a00; --warn-soft:#fdf2dc; --code:#f1f2f5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15171b; --surface:#1d2026; --ink:#e8e9ec; --muted:#a2a8b4; --line:#30343c;
+    --accent:#8aa8ff; --accent-soft:#232c45; --good:#6fd39c; --good-soft:#1c3328;
+    --bad:#ff8a80; --bad-soft:#3a2321; --warn:#f2c46b; --warn-soft:#3a2f1a; --code:#262a31;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15171b; --surface:#1d2026; --ink:#e8e9ec; --muted:#a2a8b4; --line:#30343c;
+  --accent:#8aa8ff; --accent-soft:#232c45; --good:#6fd39c; --good-soft:#1c3328;
+  --bad:#ff8a80; --bad-soft:#3a2321; --warn:#f2c46b; --warn-soft:#3a2f1a; --code:#262a31;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+nav{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line);
+  display:flex;gap:4px;overflow-x:auto;padding:8px 16px}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;padding:4px 10px;border-radius:6px;white-space:nowrap}
+nav a:hover{background:var(--accent-soft);color:var(--accent)}
+main{max-width:1040px;margin:0 auto;padding:0 16px 64px}
+section{padding:40px 0 8px;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0}
+h1{font-size:34px;line-height:1.2;margin:8px 0}
+h2{font-size:24px;margin:0 0 4px}
+h2 .n{color:var(--accent);margin-right:8px}
+.lead{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin:0 0 6px;font-size:15px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.stat{font-size:28px;font-weight:700;line-height:1.1}
+.stat small{font-size:14px;font-weight:500;color:var(--muted)}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px}
+.tag.good{background:var(--good-soft);color:var(--good)} .tag.bad{background:var(--bad-soft);color:var(--bad)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)} .tag.info{background:var(--accent-soft);color:var(--accent)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:600;background:var(--code)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+tr.best td{background:var(--good-soft)}
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px}
+.flow .step{flex:1 1 150px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px}
+.flow .step b{display:block;font-size:14px}
+.flow .step span{font-size:13px;color:var(--muted)}
+.flow .arrow{align-self:center;color:var(--muted);font-size:20px}
+.example{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:16px;margin:12px 0}
+.example.ok{border-left-color:var(--good)} .example.err{border-left-color:var(--bad)} .example.abs{border-left-color:var(--warn)}
+.example .q{font-weight:600;margin-bottom:6px}
+.example .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--code);border-radius:8px;font-size:14px}
+code{background:var(--code);padding:1px 6px;border-radius:4px;font-size:13px}
+ol.trace{margin:8px 0;padding-left:20px;font-size:14px}
+ol.trace li{margin:4px 0}
+ul{padding-left:20px} li{margin:4px 0}
+.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.note{font-size:13px;color:var(--muted)}
+.theme{margin-left:auto;background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:2px 10px;cursor:pointer}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#tong-quan">Tổng quan</a><a href="#du-lieu">Dữ liệu</a><a href="#retrieval">Retrieval</a>
+  <a href="#agent">Agent</a><a href="#ket-qua">Kết quả</a><a href="#demo">Demo</a>
+  <a href="#bai-hoc">Bài học</a><a href="#tiep-theo">Tiếp theo</a>
+  <button class="theme" id="theme" type="button">Sáng/Tối</button>
+</nav>
+<main>
+
+<section id="tong-quan">
+  <span class="tag info">Day 7 · Retrieval &amp; Context Engineering · Đoàn Gia Long</span>
+  <h1>Agentic RAG tra cứu Luật Đầu tư 143/2025/QH15</h1>
+  <p class="lead">Agent dùng LLM thật, tự quyết định tìm thêm, trả lời có trích dẫn từng ý, hoặc từ chối khi tài liệu không có thông tin. Dùng lại toàn bộ chunk, embedding và vector store của Day 6.</p>
+  <div class="grid">
+    <div class="card"><div class="stat">43 <small>trang</small></div><p>Luật Đầu tư 143/2025/QH15, 118 chunk theo cấu trúc Điều/khoản (chiến lược B, Day 6)</p></div>
+    <div class="card"><div class="stat">27 <small>câu</small></div><p>Dev 16 + 3 thiếu evidence · Test 5 + 3 thiếu evidence</p></div>
+    <div class="card"><div class="stat">3 <small>phương pháp</small></div><p>Dense (pgvector Day 6) · BM25 tách từ tiếng Việt · Hybrid RRF</p></div>
+    <div class="card"><div class="stat">1,875 → 2,000<small>/2</small></div><p>Điểm câu trả lời dev: baseline → cấu hình 1; từ chối đúng 3/3 câu thiếu evidence</p></div>
+  </div>
+</section>
+
+<section id="du-lieu">
+  <h2><span class="n">1</span>Dùng lại Day 6 và chuẩn bị benchmark</h2>
+  <p class="lead">Không ingest lại: Day 7 kết nối thẳng database Day 6 ở chế độ chỉ đọc.</p>
+  <div class="two">
+    <div class="card">
+      <h3>Hạ tầng dùng lại</h3>
+      <ul>
+        <li>PostgreSQL 16 + pgvector 0.8.7 (Docker Day 6), bảng <code>lab_chunks</code></li>
+        <li>Embedding <code>gemini-embedding-001</code>, 768 chiều; query dùng <code>RETRIEVAL_QUERY</code></li>
+        <li>Kết nối <code>default_transaction_read_only=on</code>: Day 7 không thể sửa index</li>
+        <li>Cổng 55633 thay 55433 (Windows giữ chỗ dải 55411–55510)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Chuyển benchmark Day 6 sang Day 7</h3>
+      <ul>
+        <li><code>gold_page: [23]</code> → <code>gold: [{source_id, page, evidence}]</code></li>
+        <li>Khớp evidence: chuẩn hóa khoảng trắng + trang trong <code>[page, page_end]</code></li>
+        <li>Luật khớp của starter chỉ nhận <b>3/21</b> (PDF xuống dòng) → sau sửa <b>21/21</b></li>
+        <li>Thêm 6 câu thiếu evidence gần chủ đề (lệ phí, mức phạt, thuế suất, số ngày, mức ký quỹ, tiền lương), kiểm tra bằng tìm toàn văn 43 trang</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Agent chỉ đọc <code>cases.json</code> (câu hỏi + filter chương do người dùng cho); gold và đáp án chỉ dùng để chấm.</p>
+</section>
+
+<section id="retrieval">
+  <h2><span class="n">2</span>So sánh 3 phương pháp retrieval (dev, 16 câu có đáp án)</h2>
+  <p class="lead">Cùng corpus, câu hỏi, luật khớp evidence; context = top-3 trong 3000 ký tự.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Phương pháp</th><th>Filter chương</th><th class="num">Hit@1</th><th class="num">Hit@3</th><th class="num">Context</th><th class="num">MRR@10</th><th>Gọi API</th></tr></thead>
+    <tbody>
+      <tr><td>Dense (pgvector Day 6)</td><td>có</td><td class="num">12/16</td><td class="num">16/16</td><td class="num">16/16</td><td class="num">0,875</td><td>1 / câu</td></tr>
+      <tr><td>BM25 (âm tiết)</td><td>có</td><td class="num">13/16</td><td class="num">15/16</td><td class="num">15/16</td><td class="num">0,872</td><td>0</td></tr>
+      <tr class="best"><td>BM25 + bigram âm tiết</td><td>có</td><td class="num">16/16</td><td class="num">16/16</td><td class="num">16/16</td><td class="num">1,000</td><td>0</td></tr>
+      <tr class="best"><td>Hybrid RRF (dense + BM25-bigram)</td><td>có</td><td class="num">16/16</td><td class="num">16/16</td><td class="num">16/16</td><td class="num">1,000</td><td>1 / câu</td></tr>
+      <tr><td>Dense</td><td>không</td><td class="num">11/16</td><td class="num">15/16</td><td class="num">15/16</td><td class="num">0,812</td><td></td></tr>
+      <tr><td>BM25 + bigram</td><td>không</td><td class="num">15/16</td><td class="num">16/16</td><td class="num">16/16</td><td class="num">0,958</td><td></td></tr>
+      <tr><td>Hybrid RRF</td><td>không</td><td class="num">14/16</td><td class="num">15/16</td><td class="num">15/16</td><td class="num">0,919</td><td></td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><h3>Tách từ tiếng Việt quan trọng</h3><p>Thêm bigram (<code>đầu_tư</code>, <code>chuyển_vốn</code>) đưa BM25 từ 13 lên 16/16 Hit@1; q04 từ hạng 8 lên hạng 1.</p></div>
+    <div class="card"><h3>Benchmark thiên về lexical</h3><p>Câu hỏi trùng từ với evidence trung bình ~65% (có câu 94%), nên BM25 có lợi; câu hỏi diễn đạt xa văn luật có thể cho kết quả khác.</p></div>
+    <div class="card"><h3>Điểm yếu của RRF (q16, không filter)</h3><p>BM25 xếp evidence hạng 1 nhưng dense không có trong top-20 → chỉ được 1/61 điểm, trong khi chunk sai được cả hai phía → rơi xuống hạng 5.</p></div>
+  </div>
+</section>
+
+<section id="agent">
+  <h2><span class="n">3</span>Thiết kế agent</h2>
+  <p class="lead">Mỗi lượt, model thấy câu hỏi, các truy vấn đã thử và context hiện tại, rồi gọi đúng một công cụ.</p>
+  <div class="flow">
+    <div class="step"><b>Câu hỏi</b><span>+ filter chương nếu người dùng cho</span></div><div class="arrow">→</div>
+    <div class="step"><b>LLM: claude-opus-5-5</b><span>search / answer / abstain</span></div><div class="arrow">→</div>
+    <div class="step"><b>search(query)</b><span>dense pgvector · BM25 · hybrid; top-3</span></div><div class="arrow">→</div>
+    <div class="step"><b>Ghép context</b><span>khử trùng lặp, budget 3000 ký tự, có nguồn + trang + Điều</span></div><div class="arrow">→</div>
+    <div class="step"><b>Trả lời</b><span>mỗi ý có [chunk-id]; hoặc từ chối</span></div>
+  </div>
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><h3>Điều kiện dừng</h3><p>Trả lời, từ chối, hết 3 lượt search, hoặc quá 6 lượt.</p></div>
+    <div class="card"><h3>Kiểm tra citation</h3><p>Citation phải có trong context và xuất hiện dạng [id] trong câu trả lời; sai → từ chối.</p></div>
+    <div class="card"><h3>Trace đầy đủ</h3><p>Mỗi tool call, truy vấn, kết quả, context cuối, câu trả lời, token, thời gian, lỗi.</p></div>
+    <div class="card"><h3>An toàn</h3><p>Nội dung tài liệu là dữ liệu, không phải chỉ dẫn; lỗi API ghi <code>status: error</code>, không thay bằng kết quả giả.</p></div>
+  </div>
+</section>
+
+<section id="ket-qua">
+  <h2><span class="n">4</span>Kết quả agent baseline (dense, dev 19 câu)</h2>
+  <p class="lead">Nhãn câu trả lời và citation được đọc đối chiếu với toàn văn chunk được trích.</p>
+  <div class="grid">
+    <div class="card"><div class="stat">19/19</div><p>Có gọi retrieval tool</p></div>
+    <div class="card"><div class="stat">1,875<small>/2</small></div><p>Grounded answer: 15 câu điểm 2, 1 câu điểm 0</p></div>
+    <div class="card"><div class="stat">33/33</div><p>Citation có trong context và hỗ trợ ý được trích</p></div>
+    <div class="card"><div class="stat">3/3</div><p>Từ chối đúng câu thiếu evidence</p></div>
+    <div class="card"><div class="stat">1/16</div><p>Từ chối nhầm câu có đáp án (q13)</p></div>
+    <div class="card"><div class="stat">$0,78</div><p>49 lần gọi LLM · trung vị 11 s/câu · 114k token vào, 16k ra</p></div>
+  </div>
+  <h3 style="margin:24px 0 8px">Cấu hình cải thiện 1: ghép context ưu tiên lượt search mới nhất</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Cấu hình</th><th class="num">Grounded /2</th><th class="num">Citation</th><th class="num">Từ chối đúng</th><th class="num">Từ chối nhầm</th><th class="num">Context Evidence</th><th class="num">Chi phí</th><th class="num">Trung vị</th></tr></thead>
+    <tbody>
+      <tr><td>Baseline (giữ chunk lượt đầu)</td><td class="num">1,875</td><td class="num">33/33</td><td class="num">3/3</td><td class="num">1/16</td><td class="num">15/16</td><td class="num">$0,78</td><td class="num">11,0 s</td></tr>
+      <tr class="best"><td>Cấu hình 1 (ưu tiên lượt mới nhất) — <b>chọn</b></td><td class="num">2,000</td><td class="num">36/36</td><td class="num">3/3</td><td class="num">0/16</td><td class="num">16/16</td><td class="num">$0,79</td><td class="num">9,4 s</td></tr>
+      <tr><td>Cấu hình 2 (hybrid RRF + ưu tiên lượt mới nhất)</td><td class="num">1,875</td><td class="num">32/32</td><td class="num">3/3</td><td class="num">1/16</td><td class="num">15/16</td><td class="num">$0,77</td><td class="num">9,1 s</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Cấu hình 2: giả thuyết "ít lượt search hơn" không đúng — vẫn 13/16 câu chỉ cần 1 lượt như dense, chỉ tiết kiệm $0,02. q13 lại bị từ chối vì lần này agent viết truy vấn khác, Điều 29 chỉ ở hạng 6–9 với mọi retriever → q13 phụ thuộc vào cách model viết truy vấn.</p>
+  <p class="note">q13 được sửa: Điều 29 tìm được ở lượt 3 nay vào đầu context → trả lời đúng. Chênh lệch 1 câu nên có thể có yếu tố ngẫu nhiên, nhưng cơ chế được xác nhận bằng trace và unit test. Nhãn của cả hai cấu hình đã được đọc đối chiếu và duyệt.</p>
+</section>
+
+<section id="demo">
+  <h2><span class="n">5</span>Ba ví dụ minh họa</h2>
+  <div class="example ok">
+    <span class="tag good">Trả lời có bằng chứng</span>
+    <div class="q">q01 · Thời hạn hoạt động tối đa của dự án đầu tư trong khu kinh tế là bao lâu?</div>
+    <div class="meta">1 lượt search: "thời hạn hoạt động của dự án đầu tư trong khu kinh tế" → Điều 31 (trang 23) hạng 1</div>
+    <blockquote>Theo Điều 31 Luật Đầu tư 143/2025/QH15, thời hạn hoạt động của dự án đầu tư trong khu kinh tế <b>không quá 70 năm</b> [B-0288b0e0f7ba0af3]. …</blockquote>
+    <div class="note">Đối chiếu: Điều 31 khoản 1 "Thời hạn hoạt động của dự án đầu tư trong khu kinh tế không quá 70 năm." → điểm 2.</div>
+  </div>
+  <div class="example abs">
+    <span class="tag warn">Thiếu bằng chứng → từ chối</span>
+    <div class="q">u01 · Lệ phí cấp Giấy chứng nhận đăng ký đầu tư là bao nhiêu tiền?</div>
+    <div class="meta">2 lượt search khác nhau → Điều 26, 27, 42; không đoạn nào có mức lệ phí</div>
+    <blockquote>Không đủ bằng chứng trong tài liệu để trả lời.<br><i>Lý do (model):</i> các đoạn tìm được chỉ nói dự án nào phải cấp giấy, cơ quan có thẩm quyền, và Chính phủ quy định thủ tục; không đoạn nào nêu phí hay lệ phí.</blockquote>
+    <div class="note">Đúng: tìm toàn văn 43 trang, "lệ phí" có 0 kết quả.</div>
+  </div>
+  <div class="example err">
+    <span class="tag bad">Lỗi tìm thấy trên dev</span>
+    <div class="q">q13 · Với dự án thuộc diện chấp thuận chủ trương đầu tư, việc chấp thuận phải được thực hiện vào thời điểm nào?</div>
+    <ol class="trace">
+      <li>Search 1 "thời điểm chấp thuận chủ trương đầu tư" → Điều 25, 25, 33 (không có evidence) — <b>chiếm hết budget context</b></li>
+      <li>Search 2 → Điều 24 (không có evidence)</li>
+      <li>Search 3 "… trước khi triển khai dự án đầu tư" → <b>Điều 29 chứa evidence ở hạng 1</b>, nhưng context đã đầy, chunk không được đưa vào</li>
+      <li>Model không thấy evidence → từ chối (điểm 0)</li>
+    </ol>
+    <div class="note">Nguyên nhân: cách ghép context giữ chunk của lượt tìm đầu (hành vi của starter), không phải lỗi retrieval hay model.</div>
+  </div>
+</section>
+
+<section id="bai-hoc">
+  <h2><span class="n">6</span>Vấn đề gặp và cách xử lý</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Vấn đề</th><th>Xử lý</th></tr></thead>
+    <tbody>
+      <tr><td>Docker không mở được cổng 55433 (Windows giữ chỗ)</td><td>Đổi sang 55633 bằng file override, dữ liệu volume giữ nguyên</td></tr>
+      <tr><td>Evidence Day 6 không khớp nguyên văn chunk (3/21)</td><td>Luật khớp mới: chuẩn hóa khoảng trắng + khoảng trang → 21/21</td></tr>
+      <tr><td>Gemini free tier chỉ 20 request/ngày/model</td><td>Agent chuyển sang Claude API; embedding vẫn dùng Gemini để tương thích index</td></tr>
+      <tr><td>Agent lặp lại cùng một truy vấn (Gemini)</td><td>Với Claude, các truy vấn lặp lại đều được viết lại khác nhau</td></tr>
+      <tr><td>Chunk tìm được ở lượt sau bị loại khỏi context (q13)</td><td>Cấu hình 1: ưu tiên chunk của lượt tìm mới nhất → q13 đúng, từ chối nhầm 1/16 → 0/16</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="tiep-theo">
+  <h2><span class="n">7</span>Đang làm và tiếp theo</h2>
+  <div class="grid">
+    <div class="card"><span class="tag good">Xong</span><h3>Cấu hình 1: context "recent"</h3><p>Giả thuyết đúng trên dev: q13 được sửa, không câu nào xấu đi; grounded 1,875 → 2,000, chi phí gần như không đổi.</p></div>
+    <div class="card"><span class="tag good">Xong</span><h3>Cấu hình 2: hybrid RRF trong agent</h3><p>Giả thuyết "ít lượt search hơn" không được xác nhận; chất lượng 1,875 như baseline. Đã chốt chọn cấu hình 1 theo tiêu chí ghi trước.</p></div>
+    <div class="card"><span class="tag info">Tiếp theo</span><h3>Chạy test</h3><p>Baseline và cấu hình được chọn trên cùng 8 câu test; chấm tay ≥5 câu có đáp án và 2 câu thiếu evidence.</p></div>
+    <div class="card"><span class="tag info">Cuối</span><h3>Báo cáo và nộp</h3><p>Bảng so sánh, trace, nhãn, lý do chọn cấu hình, giới hạn (một văn bản, test nhỏ, benchmark thiên lexical).</p></div>
+  </div>
+  <p class="note" style="margin-top:16px">Tiêu chí chọn cấu hình đã ghi trước khi chạy: (1) điểm câu trả lời dev, (2) không giảm từ chối đúng / ít từ chối nhầm, (3) Context Evidence Rate, (4) chi phí rồi thời gian. Chênh lệch 1 câu được coi là có thể do ngẫu nhiên.</p>
+</section>
+</main>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

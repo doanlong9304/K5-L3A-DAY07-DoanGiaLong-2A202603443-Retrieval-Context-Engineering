@@ -1,0 +1,375 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Thời hạn hoạt động tối đa của dự án đầu tư trong khu kinh tế là bao lâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không quá 70 năm.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 23,
+        "evidence": "Thời hạn hoạt động của dự án đầu tư trong khu kinh tế không quá 70 năm."
+      }
+    ],
+    "evidence_quote_day6": "Thời hạn hoạt động của dự án đầu tư trong khu kinh tế không quá 70 năm."
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Một dự án nằm ngoài khu kinh tế thì được phép hoạt động trong thời gian dài nhất là bao nhiêu năm?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không quá 50 năm (trừ các trường hợp đặc biệt được kéo dài tối đa 70 năm).",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 23,
+        "evidence": "Thời hạn hoạt động của dự án đầu tư ngoài khu kinh tế không quá 50 năm."
+      }
+    ],
+    "evidence_quote_day6": "Thời hạn hoạt động của dự án đầu tư ngoài khu kinh tế không quá 50 năm."
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Tài sản hợp pháp của nhà đầu tư có bị quốc hữu hóa hay tịch thu bằng biện pháp hành chính không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không, tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 8,
+        "evidence": "Tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu\nbằng biện pháp hành chính."
+      }
+    ],
+    "evidence_quote_day6": "Tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính."
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nhà đầu tư nước ngoài cần đáp ứng điều kiện gì để được chuyển vốn đầu tư ra nước ngoài?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Phải thực hiện đầy đủ nghĩa vụ tài chính đối với Nhà nước Việt Nam theo quy định của pháp luật.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 9,
+        "evidence": "Sau khi thực hiện đầy đủ nghĩa vụ tài chính đối với Nhà nước Việt Nam theo\nquy định của pháp luật, nhà đầu tư nước ngoài được chuyển ra nước ngoài các tài\nsản sau đây:\n1. Vốn đầu tư, các khoản thanh lý đầu tư;"
+      }
+    ],
+    "evidence_quote_day6": "Sau khi thực hiện đầy đủ nghĩa vụ tài chính đối với Nhà nước Việt Nam theo quy định của pháp luật, nhà đầu tư nước ngoài được chuyển ra nước ngoài các tài sản sau đây: 1. Vốn đầu tư, các khoản thanh lý đầu tư;"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Tranh chấp giữa các nhà đầu tư mà có ít nhất một bên là nhà đầu tư nước ngoài có được giải quyết tại Trọng tài nước ngoài không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Có. Có thể giải quyết qua Tòa án Việt Nam, Trọng tài Việt Nam, Trọng tài nước ngoài, Trọng tài quốc tế hoặc trọng tài do các bên thỏa thuận thành lập.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 10,
+        "evidence": "Tranh chấp giữa các nhà đầu tư trong đó có ít nhất một bên là nhà đầu tư\nnước ngoài hoặc tổ chức kinh tế quy định tại các điểm a, b và c khoản 1 Điều 20\ncủa Luật này được giải quyết thông qua một trong những cơ quan, tổ chức sau đây:\na) Tòa án Việt Nam;\nb) Trọng tài Việt Nam;\nc) Trọng tài nước ngoài;"
+      }
+    ],
+    "evidence_quote_day6": "Tranh chấp giữa các nhà đầu tư trong đó có ít nhất một bên là nhà đầu tư nước ngoài hoặc tổ chức kinh tế quy định tại các điểm a, b và c khoản 1 Điều 20 của Luật này được giải quyết thông qua một trong những cơ quan, tổ chức sau đây: a) Tòa án Việt Nam; b) Trọng tài Việt Nam; c) Trọng tài nước ngoài;"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Kinh doanh dịch vụ đòi nợ có thuộc ngành, nghề cấm đầu tư kinh doanh không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Có, kinh doanh dịch vụ đòi nợ bị cấm.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 5,
+        "evidence": "h) Kinh doanh dịch vụ đòi nợ;"
+      }
+    ],
+    "evidence_quote_day6": "h) Kinh doanh dịch vụ đòi nợ;"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Cơ quan nào lập ra Quỹ Hỗ trợ đầu tư và quỹ này nhằm mục đích gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Chính phủ thành lập, để ổn định môi trường đầu tư, khuyến khích, thu hút nhà đầu tư chiến lược, tập đoàn đa quốc gia và hỗ trợ doanh nghiệp trong nước ở một số lĩnh vực cần khuyến khích đầu tư.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 13,
+        "evidence": "Chính phủ thành lập Quỹ Hỗ trợ đầu tư để ổn định môi trường đầu tư,\nkhuyến khích, thu hút nhà đầu tư chiến lược, tập đoàn đa quốc gia và hỗ trợ doanh\nnghiệp trong nước đối với một số lĩnh vực cần khuyến khích đầu tư."
+      }
+    ],
+    "evidence_quote_day6": "Chính phủ thành lập Quỹ Hỗ trợ đầu tư để ổn định môi trường đầu tư, khuyến khích, thu hút nhà đầu tư chiến lược, tập đoàn đa quốc gia và hỗ trợ doanh nghiệp trong nước đối với một số lĩnh vực cần khuyến khích đầu tư."
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Có những hình thức đầu tư nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Đầu tư thành lập tổ chức kinh tế; góp vốn, mua cổ phần, mua phần vốn góp; thực hiện dự án đầu tư; hợp đồng BCC; các hình thức, loại hình tổ chức kinh tế mới theo quy định của Chính phủ.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 14,
+        "evidence": "1. Đầu tư thành lập tổ chức kinh tế.\n2. Đầu tư góp vốn, mua cổ phần, mua phần vốn góp.\n3. Thực hiện dự án đầu tư.\n4. Đầu tư theo hình thức hợp đồng BCC."
+      }
+    ],
+    "evidence_quote_day6": "1. Đầu tư thành lập tổ chức kinh tế. 2. Đầu tư góp vốn, mua cổ phần, mua phần vốn góp. 3. Thực hiện dự án đầu tư. 4. Đầu tư theo hình thức hợp đồng BCC.",
+    "filter": {
+      "chapter": "IV"
+    },
+    "filter_note": "Người dùng chọn phạm vi Chương IV (Hoạt động đầu tư tại Việt Nam); không lọc dễ lẫn với Điều 39 (hình thức đầu tư ra nước ngoài, Chương V)."
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Những ngành, nghề nào thuộc diện đầu tư có điều kiện?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ngân hàng; bảo hiểm; chứng khoán; báo chí, phát thanh, truyền hình; kinh doanh bất động sản.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 30,
+        "evidence": "1. Ngành, nghề đầu tư ra nước ngoài có điều kiện bao gồm:\na) Ngân hàng;\nb) Bảo hiểm;\nc) Chứng khoán;\nd) Báo chí, phát thanh, truyền hình;\nđ) Kinh doanh bất động sản."
+      }
+    ],
+    "evidence_quote_day6": "1. Ngành, nghề đầu tư ra nước ngoài có điều kiện bao gồm: a) Ngân hàng; b) Bảo hiểm; c) Chứng khoán; d) Báo chí, phát thanh, truyền hình; đ) Kinh doanh bất động sản.",
+    "filter": {
+      "chapter": "V"
+    },
+    "filter_note": "Người dùng chọn phạm vi Chương V (Hoạt động đầu tư ra nước ngoài); không lọc dễ lẫn với Điều 7 (ngành, nghề đầu tư kinh doanh có điều kiện, Chương I)."
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Hợp đồng BCC ký giữa các nhà đầu tư trong nước được thực hiện theo quy định nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Theo quy định của pháp luật về dân sự và pháp luật có liên quan.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 16,
+        "evidence": "1. Hợp đồng BCC được ký kết giữa các nhà đầu tư trong nước thực hiện theo\nquy định của pháp luật về dân sự và pháp luật có liên quan."
+      }
+    ],
+    "evidence_quote_day6": "1. Hợp đồng BCC được ký kết giữa các nhà đầu tư trong nước thực hiện theo quy định của pháp luật về dân sự và pháp luật có liên quan."
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nếu hợp đồng BCC có nhà đầu tư nước ngoài tham gia thì phải làm thủ tục gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo Điều 26.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 16,
+        "evidence": "2. Hợp đồng BCC được ký kết giữa nhà đầu tư trong nước với nhà đầu tư\nnước ngoài hoặc giữa các nhà đầu tư nước ngoài thực hiện thủ tục cấp Giấy chứng\nnhận đăng ký đầu tư theo quy định tại Điều 26 của Luật này."
+      }
+    ],
+    "evidence_quote_day6": "2. Hợp đồng BCC được ký kết giữa nhà đầu tư trong nước với nhà đầu tư nước ngoài hoặc giữa các nhà đầu tư nước ngoài thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư theo quy định tại Điều 26 của Luật này."
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Loại hợp đồng nào cho phép các nhà đầu tư hợp tác kinh doanh, chia lợi nhuận mà không phải lập tổ chức kinh tế?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Hợp đồng hợp tác kinh doanh (hợp đồng BCC).",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 2,
+        "evidence": "Hợp đồng hợp tác kinh doanh (sau đây gọi là hợp đồng BCC) là hợp đồng\nđược ký giữa các nhà đầu tư nhằm hợp tác kinh doanh, phân chia lợi nhuận, phân\nchia sản phẩm theo quy định của pháp luật mà không thành lập tổ chức kinh tế."
+      }
+    ],
+    "evidence_quote_day6": "Hợp đồng hợp tác kinh doanh (sau đây gọi là hợp đồng BCC) là hợp đồng được ký giữa các nhà đầu tư nhằm hợp tác kinh doanh, phân chia lợi nhuận, phân chia sản phẩm theo quy định của pháp luật mà không thành lập tổ chức kinh tế."
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Với dự án thuộc diện chấp thuận chủ trương đầu tư, việc chấp thuận phải được thực hiện vào thời điểm nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Trước khi nhà đầu tư thực hiện dự án đầu tư.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 22,
+        "evidence": "1. Đối với dự án đầu tư thuộc diện chấp thuận chủ trương đầu tư, việc chấp\nthuận chủ trương đầu tư phải được thực hiện trước khi nhà đầu tư thực hiện dự\nán đầu tư."
+      }
+    ],
+    "evidence_quote_day6": "1. Đối với dự án đầu tư thuộc diện chấp thuận chủ trương đầu tư, việc chấp thuận chủ trương đầu tư phải được thực hiện trước khi nhà đầu tư thực hiện dự án đầu tư."
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nhà đầu tư trúng đấu giá quyền sử dụng đất có phải ký quỹ bảo đảm thực hiện dự án không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không. Đây là trường hợp được trừ khỏi nghĩa vụ ký quỹ/bảo lãnh ngân hàng.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 23,
+        "evidence": "cho phép chuyển mục đích sử dụng đất, trừ các trường hợp sau đây:\na) Nhà đầu tư trúng đấu giá quyền sử dụng đất;"
+      }
+    ],
+    "evidence_quote_day6": "cho phép chuyển mục đích sử dụng đất, trừ các trường hợp sau đây: a) Nhà đầu tư trúng đấu giá quyền sử dụng đất;"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Khi dự án phải ngừng hoạt động vì bất khả kháng, nhà đầu tư được Nhà nước hỗ trợ gì về đất?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Được miễn tiền thuê đất, giảm tiền sử dụng đất trong thời gian ngừng hoạt động để khắc phục hậu quả do bất khả kháng.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 27,
+        "evidence": "Trường hợp ngừng hoạt động của dự án đầu tư vì lý do\nbất khả kháng thì nhà đầu tư được Nhà nước miễn tiền thuê đất, giảm tiền sử dụng\nđất trong thời gian ngừng hoạt động để khắc phục hậu quả do bất khả kháng gây ra."
+      }
+    ],
+    "evidence_quote_day6": "Trường hợp ngừng hoạt động của dự án đầu tư vì lý do bất khả kháng thì nhà đầu tư được Nhà nước miễn tiền thuê đất, giảm tiền sử dụng đất trong thời gian ngừng hoạt động để khắc phục hậu quả do bất khả kháng gây ra."
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Nhà đầu tư phải tuân thủ những quy định nào khi thực hiện hoạt động đầu tư?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Luật Đầu tư, quy định khác của pháp luật có liên quan, pháp luật của nước tiếp nhận đầu tư và điều ước quốc tế có liên quan; tự chịu trách nhiệm về hiệu quả đầu tư ở nước ngoài.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 29,
+        "evidence": "Nhà đầu tư thực hiện hoạt động đầu tư ra nước ngoài phải tuân thủ quy định\ncủa Luật này, quy định khác của pháp luật có liên quan, pháp luật của quốc gia, vùng\nlãnh thổ tiếp nhận đầu tư (sau đây gọi là nước tiếp nhận đầu tư) và điều ước quốc tế\ncó liên quan;"
+      }
+    ],
+    "evidence_quote_day6": "Nhà đầu tư thực hiện hoạt động đầu tư ra nước ngoài phải tuân thủ quy định của Luật này, quy định khác của pháp luật có liên quan, pháp luật của quốc gia, vùng lãnh thổ tiếp nhận đầu tư (sau đây gọi là nước tiếp nhận đầu tư) và điều ước quốc tế có liên quan;",
+    "filter": {
+      "chapter": "V"
+    },
+    "filter_note": "Người dùng chọn phạm vi Chương V (đầu tư ra nước ngoài); không lọc dễ lẫn với Điều 29 khoản 3 (Chương IV)."
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Những ngành, nghề nào bị cấm đầu tư?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ngành, nghề cấm theo Điều 6 và điều ước quốc tế liên quan; ngành, nghề có công nghệ, sản phẩm cấm xuất khẩu theo pháp luật quản lý ngoại thương; ngành, nghề bị cấm theo pháp luật nước tiếp nhận đầu tư.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 30,
+        "evidence": "2. Ngành, nghề có công nghệ, sản phẩm thuộc đối tượng cấm xuất khẩu theo\nquy định của pháp luật về quản lý ngoại thương.\n3. Ngành, nghề cấm đầu tư kinh doanh theo quy định của pháp luật nước\ntiếp nhận đầu tư."
+      }
+    ],
+    "evidence_quote_day6": "2. Ngành, nghề có công nghệ, sản phẩm thuộc đối tượng cấm xuất khẩu theo quy định của pháp luật về quản lý ngoại thương. 3. Ngành, nghề cấm đầu tư kinh doanh theo quy định của pháp luật nước tiếp nhận đầu tư.",
+    "filter": {
+      "chapter": "V"
+    },
+    "filter_note": "Người dùng chọn phạm vi Chương V (đầu tư ra nước ngoài); không lọc dễ lẫn với Điều 6 (ngành, nghề cấm đầu tư kinh doanh, Chương I)."
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "Một công ty được thành lập theo pháp luật nước ngoài, kinh doanh tại Việt Nam thì được coi là loại nhà đầu tư nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Nhà đầu tư nước ngoài.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 3,
+        "evidence": "Nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành\nlập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam."
+      }
+    ],
+    "evidence_quote_day6": "Nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành lập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam."
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Sau bao lâu kể từ khi kết thúc tiến độ thực hiện mục tiêu hoạt động thì cơ quan đăng ký đầu tư có thể chấm dứt dự án?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Sau 24 tháng kể từ thời điểm kết thúc tiến độ thực hiện các mục tiêu hoạt động của dự án (hoặc của từng giai đoạn) nếu nhà đầu tư vẫn không thực hiện được.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 28,
+        "evidence": "b) Sau 24 tháng kể từ thời điểm kết thúc tiến độ thực hiện các mục tiêu hoạt\nđộng của dự án đầu tư hoặc mục tiêu hoạt động của từng giai đoạn (nếu có)"
+      }
+    ],
+    "evidence_quote_day6": "b) Sau 24 tháng kể từ thời điểm kết thúc tiến độ thực hiện các mục tiêu hoạt động của dự án đầu tư hoặc mục tiêu hoạt động của từng giai đoạn (nếu có)"
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "Nhà đầu tư có dự án ở nước ngoài phải gửi báo cáo tình hình hoạt động bao lâu một lần và gửi cho ai?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Định kỳ 06 tháng và hằng năm, gửi Bộ Tài chính, Ngân hàng Nhà nước Việt Nam và Cơ quan đại diện Việt Nam tại nước tiếp nhận đầu tư.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 37,
+        "evidence": "b) Định kỳ 06 tháng, hằng năm, nhà đầu tư gửi báo cáo tình hình hoạt động\ncủa dự án đầu tư cho Bộ Tài chính, Ngân hàng Nhà nước Việt Nam, Cơ quan đại\ndiện Việt Nam tại nước tiếp nhận đầu tư;"
+      }
+    ],
+    "evidence_quote_day6": "b) Định kỳ 06 tháng, hằng năm, nhà đầu tư gửi báo cáo tình hình hoạt động của dự án đầu tư cho Bộ Tài chính, Ngân hàng Nhà nước Việt Nam, Cơ quan đại diện Việt Nam tại nước tiếp nhận đầu tư;"
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Luật Đầu tư số 143/2025/QH15 có hiệu lực thi hành từ ngày nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Từ ngày 01 tháng 03 năm 2026, trừ trường hợp quy định tại khoản 2 và khoản 3 Điều 51.",
+    "gold": [
+      {
+        "source_id": "luat-dau-tu-143-2025-qh15",
+        "page": 39,
+        "evidence": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 03 năm 2026, trừ trường\nhợp quy định tại khoản 2 và khoản 3 Điều này."
+      }
+    ],
+    "evidence_quote_day6": "1. Luật này có hiệu lực thi hành từ ngày 01 tháng 03 năm 2026, trừ trường hợp quy định tại khoản 2 và khoản 3 Điều này."
+  }
+]

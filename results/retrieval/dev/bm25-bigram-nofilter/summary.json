@@ -1,0 +1,52 @@
+{
+  "run": "bm25-bigram-nofilter",
+  "method": "bm25-bigram",
+  "split": "dev",
+  "run_at": "2026-11-14T16:27:44+07:00",
+  "config": {
+    "top_k_fetched": 10,
+    "context_from": "top-3",
+    "budget_chars": 3000,
+    "use_user_filter": false,
+    "chunks": "Day 6 strategy B (118)",
+    "embedding": "gemini-embedding-001 768d"
+  },
+  "metrics": {
+    "hit1": {
+      "n": 15,
+      "N": 16,
+      "rate": 0.938,
+      "str": "15/16"
+    },
+    "hit3": {
+      "n": 16,
+      "N": 16,
+      "rate": 1.0,
+      "str": "16/16"
+    },
+    "context_evidence": {
+      "n": 16,
+      "N": 16,
+      "rate": 1.0,
+      "str": "16/16"
+    },
+    "hit10": {
+      "n": 16,
+      "N": 16,
+      "rate": 1.0,
+      "str": "16/16"
+    },
+    "mrr10": 0.958,
+    "misses_at_3": [],
+    "not_rank1": [
+      "q09"
+    ],
+    "avg_context_chars": 2330,
+    "median_latency_ms": 0.8
+  },
+  "cost": {
+    "embedding_api_calls": 0,
+    "embedding_cache_hits": 0,
+    "total_seconds": 0.02
+  }
+}

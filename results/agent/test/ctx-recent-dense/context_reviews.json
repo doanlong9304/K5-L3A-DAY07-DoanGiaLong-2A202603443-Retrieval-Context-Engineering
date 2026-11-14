@@ -1,0 +1,66 @@
+{
+  "scale": "0 = không có evidence; 1 = có nhưng thiếu điều kiện hoặc nguồn; 2 = đủ evidence và nguồn (BENCHMARK.md mục 2)",
+  "counts": {
+    "0": 0,
+    "1": 0,
+    "2": 5,
+    "N": 5
+  },
+  "labels": [
+    {
+      "query_id": "t01",
+      "final_context_ids": [
+        "B-4679425b231441ae",
+        "B-30b81c76d49df66f",
+        "B-f79f725070650181",
+        "B-67bca7e9097c9c87"
+      ],
+      "context_grade": 2,
+      "reason": "Context có trọn Điều 40 k1-k3 [B-4679, hạng 1 từ lượt 1] kèm nguồn trang 30, Điều 40 = đủ đáp án chuẩn. Context đủ nhưng agent vẫn từ chối (lỗi diễn giải câu hỏi, không do context).",
+      "reviewer": "Đoàn Gia Long"
+    },
+    {
+      "query_id": "t02",
+      "final_context_ids": [
+        "B-0a9a8be259cae4c2",
+        "B-d809ebe15fe79a20",
+        "B-5c7f4add003ca5ff"
+      ],
+      "context_grade": 2,
+      "reason": "Điều 3 k19 [B-0a9a] có định nghĩa nhà đầu tư nước ngoài kèm nguồn trang 2-3; thêm k18, k20-22 để phân biệt các loại.",
+      "reviewer": "Đoàn Gia Long"
+    },
+    {
+      "query_id": "t03",
+      "final_context_ids": [
+        "B-2b7d8deec90172dc",
+        "B-d4340505f6e7f329"
+      ],
+      "context_grade": 2,
+      "reason": "Điều 36 k2 điểm b (24 tháng) [B-2b7d] và điểm đ (ngoại lệ thu hồi đất) [B-d434] đều trong context, đủ điều kiện và ngoại lệ, có nguồn trang 27-28.",
+      "reviewer": "Đoàn Gia Long"
+    },
+    {
+      "query_id": "t04",
+      "final_context_ids": [
+        "B-5073689a2834db3c",
+        "B-71dfbbff0a0b5b66",
+        "B-d5ba860915fd82bb"
+      ],
+      "context_grade": 2,
+      "reason": "Điều 48 k2 điểm b (định kỳ 06 tháng, hằng năm; 3 cơ quan nhận) [B-71df] trong context kèm nguồn trang 36-37.",
+      "reviewer": "Đoàn Gia Long"
+    },
+    {
+      "query_id": "t05",
+      "final_context_ids": [
+        "B-fbf3fa0919e2dd84",
+        "B-4d770a6b103678b9",
+        "B-0b85056d7951b96e"
+      ],
+      "context_grade": 2,
+      "reason": "Điều 51 k1-k3 [B-fbf3] (01/3/2026 và 2 ngoại lệ) trong context kèm nguồn trang 39.",
+      "reviewer": "Đoàn Gia Long"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Thời hạn hoạt động tối đa của dự án đầu tư trong khu kinh tế là bao lâu?",
+    "filter": null,
+    "model": "gemini-3.5-flash-lite",
+    "retriever": "dense",
+    "status": "answered",
+    "answer": "Thời hạn hoạt động của dự án đầu tư trong khu kinh tế tối đa không quá 70 năm [B-0288b0e0f7ba0af3].",
+    "citations": [
+      "B-0288b0e0f7ba0af3"
+    ],
+    "stop_reason": "answer",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "thời hạn hoạt động của dự án đầu tư khu kinh tế Luật Đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-0288b0e0f7ba0af3",
+            "page": 23,
+            "article": 31,
+            "score": 0.8171
+          },
+          {
+            "id": "B-e7304ebd3af27c91",
+            "page": 24,
+            "article": 31,
+            "score": 0.753
+          },
+          {
+            "id": "B-fced6d927e32f5bf",
+            "page": 41,
+            "article": 52,
+            "score": 0.7266
+          }
+        ],
+        "context_ids": [
+          "B-0288b0e0f7ba0af3",
+          "B-e7304ebd3af27c91"
+        ],
+        "context_chars": 2020
+      },
+      {
+        "event": "answer",
+        "answer": "Thời hạn hoạt động của dự án đầu tư trong khu kinh tế tối đa không quá 70 năm [B-0288b0e0f7ba0af3].",
+        "citations": [
+          "B-0288b0e0f7ba0af3"
+        ],
+        "invalid_citations": []
+      }
+    ],
+    "queries": [
+      "thời hạn hoạt động của dự án đầu tư khu kinh tế Luật Đầu tư"
+    ],
+    "final_context": "[B-0288b0e0f7ba0af3] (nguồn: data/raw/luat143-2025.pdf | trang 23 | Điều 31)\nĐiều 31. Thời hạn hoạt động, tiến độ thực hiện của dự án đầu tư\n1. Thời hạn hoạt động của dự án đầu tư trong khu kinh tế không quá 70 năm.\n2. Thời hạn hoạt động của dự án đầu tư ngoài khu kinh tế không quá 50 năm.\nDự án đầu tư thực hiện tại địa bàn có điều kiện kinh tế - xã hội khó khăn, địa bàn\ncó điều kiện kinh tế - xã hội đặc biệt khó khăn hoặc dự án đầu tư có vốn đầu tư lớn\nnhưng thu hồi vốn chậm; dự án đầu tư xây dựng và kinh doanh kết cấu hạ tầng khu\ncông nghệ cao, khu công nghiệp công nghệ cao, khu công nghệ số tập trung; dự án\nthuộc diện ưu đãi, hỗ trợ đầu tư đặc biệt quy định tại khoản 2 Điều 17 của Luật này\nthì thời hạn hoạt động của dự án đầu tư có thể dài hơn nhưng không quá 70 năm.\n3. Trường hợp tiến độ, thời hạn hoạt động của dự án bị ảnh hưởng trong các\ntrường hợp quy định tại các khoản a, b, c, d và g khoản 4 Điều 33 của Luật này thì\nthời gian bị chậm đó không tính vào thời hạn hoạt động, tiến độ thực hiện của dự\nán đầu tư.\n\n[B-e7304ebd3af27c91] (nguồn: data/raw/luat143-2025.pdf | trang 24 | Điều 31)\nĐiều 31. Thời hạn hoạt động, tiến độ thực hiện của dự án đầu tư (tiếp)\n4. Trong quá trình thực hiện dự án đầu tư, nhà đầu tư được điều chỉnh tăng\nhoặc giảm thời hạn hoạt động của dự án đầu tư. Thời hạn hoạt động của dự án đầu\ntư sau khi điều chỉnh không được vượt quá thời hạn quy định tại khoản 1 và khoản\n2 Điều này.\n5. Khi hết thời hạn hoạt động của dự án đầu tư mà nhà đầu tư có nhu cầu\ntiếp tục thực hiện dự án đầu tư và đáp ứng điều kiện theo quy định của pháp luật\nthì được xem xét gia hạn thời hạn hoạt động, trừ các dự án đầu tư sau đây:\na) Dự án đầu tư sử dụng công nghệ lạc hậu, tiềm ẩn nguy cơ gây ô nhiễm\nmôi trường, thâm dụng tài nguyên;\nb) Dự án đầu tư thuộc trường hợp nhà đầu tư phải chuyển giao không bồi\nhoàn tài sản cho Nhà nước Việt Nam hoặc bên Việt Nam.\nThời gian mỗi lần gia hạn tối đa không quá thời hạn quy định tại khoản 1 và\nkhoản 2 Điều này.\n6. Chính phủ quy định chi tiết Điều này.",
+    "final_context_ids": [
+      "B-0288b0e0f7ba0af3",
+      "B-e7304ebd3af27c91"
+    ],
+    "n_searches": 1,
+    "usage": {
+      "llm_calls": 2,
+      "llm_retries": 0,
+      "input_tokens": 1773,
+      "output_tokens": 102,
+      "thinking_tokens": 0,
+      "llm_seconds": 8.61,
+      "retrieval_seconds": 0.511
+    },
+    "seconds": 9.12
+  },
+  {
+    "query_id": "u02",
+    "split": "dev",
+    "question": "Nhà đầu tư chậm tiến độ thực hiện dự án đầu tư bị phạt tiền tối đa bao nhiêu?",
+    "filter": null,
+    "model": "gemini-3.5-flash-lite",
+    "retriever": "dense",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "stop_reason": "model_abstain",
+    "events": [
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "Luật Đầu tư chậm tiến độ thực hiện dự án đầu tư phạt tiền tối đa",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-74be6ac4f631b6d2",
+            "page": 25,
+            "article": 33,
+            "score": 0.7221
+          },
+          {
+            "id": "B-0288b0e0f7ba0af3",
+            "page": 23,
+            "article": 31,
+            "score": 0.7189
+          },
+          {
+            "id": "B-e7304ebd3af27c91",
+            "page": 24,
+            "article": 31,
+            "score": 0.7148
+          }
+        ],
+        "context_ids": [
+          "B-74be6ac4f631b6d2",
+          "B-0288b0e0f7ba0af3"
+        ],
+        "context_chars": 2147
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "phạt tiền tối đa chậm tiến độ thực hiện dự án đầu tư Luật Đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-74be6ac4f631b6d2",
+            "page": 25,
+            "article": 33,
+            "score": 0.7213
+          },
+          {
+            "id": "B-e7304ebd3af27c91",
+            "page": 24,
+            "article": 31,
+            "score": 0.7165
+          },
+          {
+            "id": "B-0288b0e0f7ba0af3",
+            "page": 23,
+            "article": 31,
+            "score": 0.7158
+          }
+        ],
+        "context_ids": [
+          "B-74be6ac4f631b6d2",
+          "B-0288b0e0f7ba0af3"
+        ],
+        "context_chars": 2147
+      },
+      {
+        "event": "search",
+        "tool": "search",
+        "query": "xử phạt vi phạm hành chính chậm tiến độ đầu tư phạt tiền tối đa Luật Đầu tư",
+        "filter": null,
+        "results": [
+          {
+            "id": "B-74be6ac4f631b6d2",
+            "page": 25,
+            "article": 33,
+            "score": 0.7059
+          },
+          {
+            "id": "B-77ed886349b73469",
+            "page": 27,
+            "article": 35,
+            "score": 0.7009
+          },
+          {
+            "id": "B-e7304ebd3af27c91",
+            "page": 24,
+            "article": 31,
+            "score": 0.6875
+          }
+        ],
+        "context_ids": [
+          "B-74be6ac4f631b6d2",
+          "B-0288b0e0f7ba0af3"
+        ],
+        "context_chars": 2147
+      },
+      {
+        "event": "abstain",
+        "reason": "Các đoạn văn bản trong CONTEXT (Luật Đầu tư số 143/2025/QH15) không chứa thông tin về mức phạt tiền tối đa đối với nhà đầu tư chậm tiến độ thực hiện dự án đầu tư."
+      }
+    ],
+    "queries": [
+      "Luật Đầu tư chậm tiến độ thực hiện dự án đầu tư phạt tiền tối đa",
+      "phạt tiền tối đa chậm tiến độ thực hiện dự án đầu tư Luật Đầu tư",
+      "xử phạt vi phạm hành chính chậm tiến độ đầu tư phạt tiền tối đa Luật Đầu tư"
+    ],
+    "final_context": "[B-74be6ac4f631b6d2] (nguồn: data/raw/luat143-2025.pdf | trang 25 | Điều 33)\nĐiều 33. Điều chỉnh dự án đầu tư (tiếp)\n4. Đối với dự án đầu tư được chấp thuận chủ trương đầu tư, nhà đầu tư không\nđược điều chỉnh tiến độ thực hiện dự án đầu tư quá 24 tháng so với tiến độ thực\nhiện dự án đầu tư quy định tại văn bản chấp thuận chủ trương đầu tư lần đầu, trừ\nmột trong các trường hợp sau đây:\na) Để khắc phục hậu quả trong trường hợp bất khả kháng theo quy định của\npháp luật về dân sự và pháp luật về đất đai;\nb) Điều chỉnh tiến độ thực hiện dự án đầu tư do nhà đầu tư chậm được Nhà\nnước giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất;\nc) Điều chỉnh tiến độ thực hiện dự án đầu tư theo yêu cầu của cơ quan quản\nlý nhà nước hoặc cơ quan nhà nước chậm thực hiện thủ tục hành chính;\nd) Điều chỉnh dự án đầu tư do cơ quan nhà nước thay đổi quy hoạch;\nđ) Thay đổi mục tiêu đã được quy định tại văn bản chấp thuận chủ trương\nđầu tư; bổ sung mục tiêu thuộc diện chấp thuận chủ trương đầu tư;\ne) Tăng tổng vốn đầu tư từ 20% trở lên làm thay đổi quy mô dự án đầu tư;\ng) Trường hợp khác theo quy định của Chính phủ.\n\n[B-0288b0e0f7ba0af3] (nguồn: data/raw/luat143-2025.pdf | trang 23 | Điều 31)\nĐiều 31. Thời hạn hoạt động, tiến độ thực hiện của dự án đầu tư\n1. Thời hạn hoạt động của dự án đầu tư trong khu kinh tế không quá 70 năm.\n2. Thời hạn hoạt động của dự án đầu tư ngoài khu kinh tế không quá 50 năm.\nDự án đầu tư thực hiện tại địa bàn có điều kiện kinh tế - xã hội khó khăn, địa bàn\ncó điều kiện kinh tế - xã hội đặc biệt khó khăn hoặc dự án đầu tư có vốn đầu tư lớn\nnhưng thu hồi vốn chậm; dự án đầu tư xây dựng và kinh doanh kết cấu hạ tầng khu\ncông nghệ cao, khu công nghiệp công nghệ cao, khu công nghệ số tập trung; dự án\nthuộc diện ưu đãi, hỗ trợ đầu tư đặc biệt quy định tại khoản 2 Điều 17 của Luật này\nthì thời hạn hoạt động của dự án đầu tư có thể dài hơn nhưng không quá 70 năm.\n3. Trường hợp tiến độ, thời hạn hoạt động của dự án bị ảnh hưởng trong các\ntrường hợp quy định tại các khoản a, b, c, d và g khoản 4 Điều 33 của Luật này thì\nthời gian bị chậm đó không tính vào thời hạn hoạt động, tiến độ thực hiện của dự\nán đầu tư.",
+    "final_context_ids": [
+      "B-74be6ac4f631b6d2",
+      "B-0288b0e0f7ba0af3"
+    ],
+    "n_searches": 3,
+    "usage": {
+      "llm_calls": 4,
+      "llm_retries": 1,
+      "input_tokens": 4362,
+      "output_tokens": 158,
+      "thinking_tokens": 0,
+      "llm_seconds": 5.15,
+      "retrieval_seconds": 1.693
+    },
+    "seconds": 18.7
+  }
+]
